@@ -22,7 +22,7 @@ const SearchBar = ({ value, onChange }) => {
 }
 
 const MinRatingSelect = ({ value, onChange }) => {
-  const options = [<option value="none">none</option>];
+  const options = [<option value="0">none</option>];
   for (let i = 3; i <= 5; i = i + 0.5) {
     options.push(
       <option value={i}>{i}</option>
@@ -38,19 +38,26 @@ const MinRatingSelect = ({ value, onChange }) => {
   )
 }
 
-const RestaurantGrid = () => {
-  const restaurantGrid = businesses.map(business => {
-    return (
-      <div key={business.id}>
-        <a href={business.url}>
-          <img width="200" height="200" src={business.image_url} alt={business.name} />
-          <div>{business.name}</div>
-        </a>
-        <div>rating: {business.rating}</div>
-        <div>reviews: {business.review_count}</div>
-      </div>
-    );
-  })
+const RestaurantGrid = ({ minRating }) => {
+  const restaurantGrid = businesses
+    .filter(business => business.rating >= minRating)
+    .map(business => {
+      return (
+        <div key={business.id}>
+          <a href={business.url}>
+            <img
+              width="200"
+              height="200"
+              src={business.image_url}
+              alt={business.name}
+            />
+            <div>{business.name}</div>
+          </a>
+          <div>rating: {business.rating}</div>
+          <div>reviews: {business.review_count}</div>
+        </div>
+      );
+    });
   return (<div>{restaurantGrid}</div>)
 }
 
@@ -75,7 +82,7 @@ class Main extends Component {
       <main>
         <SearchBar value={this.state.searchText} onChange={this.handleSearchTextChange} />
         <MinRatingSelect value={this.state.minRating} onChange={this.handleMinRatingChange} />
-        <RestaurantGrid />
+        <RestaurantGrid minRating={this.state.minRating} />
       </main>
     )
   }
