@@ -50,7 +50,6 @@ const RestaurantGrid = ({ minRating }) => {
           <a href={business.url}>
             <img
               width="200"
-              height="200"
               src={business.image_url}
               alt={business.name}
             />
