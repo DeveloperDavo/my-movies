@@ -12,15 +12,13 @@ const Header = () => {
   )
 }
 
-class SearchBar extends Component {
-  render() {
-    return (
-      <div>
-        <label>Search: </label>
-        <input type="text" placeholder="location" />
-      </div>
-    )
-  }
+const SearchBar = () => {
+  return (
+    <div>
+      <label>Search: </label>
+      <input type="text" placeholder="location" />
+    </div>
+  )
 }
 
 const RestaurantGrid = () => {
@@ -39,13 +37,15 @@ const RestaurantGrid = () => {
   return (<div>{restaurantGrid}</div>)
 }
 
-const Main = () => {
-  return (
-    <main>
-      <SearchBar />
-      <RestaurantGrid />
-    </main>
-  )
+class Main extends Component {
+  render() {
+    return (
+      <main>
+        <SearchBar />
+        <RestaurantGrid />
+      </main>
+    )
+  }
 }
 
 class App extends Component {
