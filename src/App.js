@@ -12,11 +12,11 @@ const Header = () => {
   )
 }
 
-const SearchBar = () => {
+const SearchBar = ({ value, onChange }) => {
   return (
     <div>
       <label>Search: </label>
-      <input type="text" placeholder="location" />
+      <input value={value} onChange={onChange} type="text" placeholder="location" />
     </div>
   )
 }
@@ -38,10 +38,20 @@ const RestaurantGrid = () => {
 }
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {searchText: ''};
+    this.handleSearchTextChange = this.handleSearchTextChange.bind(this);
+  }
+
+  handleSearchTextChange(e) {
+    this.setState({searchText: e.target.value})
+  }
+
   render() {
     return (
       <main>
-        <SearchBar />
+        <SearchBar value={this.state.searchText} onChange={this.handleSearchTextChange} />
         <RestaurantGrid />
       </main>
     )
