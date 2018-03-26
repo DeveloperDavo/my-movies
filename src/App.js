@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { businesses } from './businesses.json';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { businesses } from "./businesses.json";
 
 const Header = () => {
   return (
@@ -9,34 +9,37 @@ const Header = () => {
       <img src={logo} className="App-logo" alt="logo" />
       <h1 className="App-title">Restaurant Finder</h1>
     </header>
-  )
-}
+  );
+};
 
 const SearchBar = ({ value, onChange }) => {
   return (
     <div>
       <label>Search: </label>
-      <input value={value} onChange={onChange} type="text" placeholder="location" />
+      <input
+        value={value}
+        onChange={onChange}
+        type="text"
+        placeholder="location"
+      />
     </div>
-  )
-}
+  );
+};
 
 const MinRatingSelect = ({ value, onChange }) => {
   const options = [<option value="0">none</option>];
   for (let i = 3; i <= 5; i = i + 0.5) {
-    options.push(
-      <option value={i}>{i}</option>
-    )
+    options.push(<option value={i}>{i}</option>);
   }
   return (
     <div>
       <label>Choose a minimum rating: </label>
       <select value={value} onChange={onChange}>
         {options}
-      </select> 
+      </select>
     </div>
-  )
-}
+  );
+};
 
 const RestaurantGrid = ({ minRating }) => {
   const restaurantGrid = businesses
@@ -58,33 +61,39 @@ const RestaurantGrid = ({ minRating }) => {
         </div>
       );
     });
-  return (<div>{restaurantGrid}</div>)
-}
+  return <div>{restaurantGrid}</div>;
+};
 
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = {searchText: '', minRating: "4.5"};
+    this.state = { searchText: "", minRating: "4.5" };
     this.handleSearchTextChange = this.handleSearchTextChange.bind(this);
     this.handleMinRatingChange = this.handleMinRatingChange.bind(this);
   }
 
   handleSearchTextChange(e) {
-    this.setState({searchText: e.target.value})
+    this.setState({ searchText: e.target.value });
   }
 
   handleMinRatingChange(e) {
-    this.setState({minRating: e.target.value})
+    this.setState({ minRating: e.target.value });
   }
 
   render() {
     return (
       <main>
-        <SearchBar value={this.state.searchText} onChange={this.handleSearchTextChange} />
-        <MinRatingSelect value={this.state.minRating} onChange={this.handleMinRatingChange} />
+        <SearchBar
+          value={this.state.searchText}
+          onChange={this.handleSearchTextChange}
+        />
+        <MinRatingSelect
+          value={this.state.minRating}
+          onChange={this.handleMinRatingChange}
+        />
         <RestaurantGrid minRating={this.state.minRating} />
       </main>
-    )
+    );
   }
 }
 
