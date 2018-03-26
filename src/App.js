@@ -27,9 +27,9 @@ const SearchBar = ({ value, onChange }) => {
 };
 
 const MinRatingSelect = ({ value, onChange }) => {
-  const options = [<option value="0">none</option>];
+  const options = [<option key="0" value="0">none</option>];
   for (let i = 3; i <= 5; i = i + 0.5) {
-    options.push(<option value={i}>{i}</option>);
+    options.push(<option key={i} value={i}>{i}</option>);
   }
   return (
     <div>
