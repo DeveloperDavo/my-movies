@@ -5,11 +5,14 @@ import { businesses } from './businesses.json';
 
 class App extends Component {
   render() {
-    const businessNames = businesses.map(business => {
+    const mainContent = businesses.map(business => {
       return (
-        <p key={business.id}>
-          {business.name}
-        </p>
+        <div key={business.id}>
+        <a href={business.url}>
+          <img width="200" height="200" src={business.image_url} alt={business.name} />
+          <div>{business.name}</div>
+        </a>
+        </div>
       );
     })
     return (
@@ -18,7 +21,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Restaurant Finder</h1>
         </header>
-        {businessNames}
+        <main>
+          {mainContent}
+        </main>
       </div>
     );
   }
