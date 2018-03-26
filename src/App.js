@@ -23,8 +23,8 @@ class SearchBar extends Component {
   }
 }
 
-const Main = () => {
-  const mainContent = businesses.map(business => {
+const RestaurantGrid = () => {
+  const restaurantGrid = businesses.map(business => {
     return (
       <div key={business.id}>
         <a href={business.url}>
@@ -36,10 +36,14 @@ const Main = () => {
       </div>
     );
   })
+  return (<div>{restaurantGrid}</div>)
+}
+
+const Main = () => {
   return (
     <main>
       <SearchBar />
-      {mainContent}
+      <RestaurantGrid />
     </main>
   )
 }
