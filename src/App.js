@@ -12,6 +12,17 @@ const Header = () => {
   )
 }
 
+class SearchBar extends Component {
+  render() {
+    return (
+      <div>
+        <label>Search: </label>
+        <input type="text" placeholder="location" />
+      </div>
+    )
+  }
+}
+
 const Main = () => {
   const mainContent = businesses.map(business => {
     return (
@@ -27,6 +38,7 @@ const Main = () => {
   })
   return (
     <main>
+      <SearchBar />
       {mainContent}
     </main>
   )
