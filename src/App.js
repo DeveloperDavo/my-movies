@@ -8,10 +8,12 @@ class App extends Component {
     const mainContent = businesses.map(business => {
       return (
         <div key={business.id}>
-        <a href={business.url}>
-          <img width="200" height="200" src={business.image_url} alt={business.name} />
-          <div>{business.name}</div>
-        </a>
+          <a href={business.url}>
+            <img width="200" height="200" src={business.image_url} alt={business.name} />
+            <div>{business.name}</div>
+          </a>
+          <div>rating: {business.rating}</div>
+          <div>reviews: {business.review_count}</div>
         </div>
       );
     })
