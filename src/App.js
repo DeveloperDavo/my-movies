@@ -12,20 +12,6 @@ const Header = () => {
   );
 };
 
-const SearchBar = ({ value, onChange }) => {
-  return (
-    <div>
-      <label>Search: </label>
-      <input
-        value={value}
-        onChange={onChange}
-        type="text"
-        placeholder="location"
-      />
-    </div>
-  );
-};
-
 const MinRatingSelect = ({ value, onChange }) => {
   const options = [<option key="0" value="0">none</option>];
   for (let i = 3; i <= 5; i = i + 0.5) {
@@ -81,10 +67,6 @@ class Main extends Component {
   render() {
     return (
       <main>
-        <SearchBar
-          value={this.state.searchText}
-          onChange={this.handleSearchTextChange}
-        />
         <MinRatingSelect
           value={this.state.minRating}
           onChange={this.handleMinRatingChange}
