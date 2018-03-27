@@ -47,6 +47,17 @@ const MovieGrid = ({ movies, minRating }) => {
   return <div>{movieGrid}</div>;
 };
 
+const Attribution = () => {
+  return (
+    <div>
+      <img height="20" src="tmdb-logo.png" alt="tmdb logo"/>
+      <span>
+        This product uses the TMDb API but is not endorsed or certified by TMDb.
+      </span>
+    </div>
+  )
+}
+
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -71,6 +82,7 @@ class Main extends Component {
           onChange={this.handleMinRatingChange}
         />
         <MovieGrid movies={this.props.movies}minRating={this.state.minRating} />
+        <Attribution />
       </main>
     );
   }
