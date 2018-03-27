@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { businesses } from "./businesses.json";
+import { results } from "./movies.json";
 
 const Header = () => {
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="App-title">Restaurant Finder</h1>
+      <h1 className="App-title">My Movies</h1>
     </header>
   );
 };
@@ -41,26 +41,25 @@ const MinRatingSelect = ({ value, onChange }) => {
   );
 };
 
-const RestaurantGrid = ({ minRating }) => {
-  const restaurantGrid = businesses
-    .filter(business => business.rating >= minRating)
-    .map(business => {
+const MovieGrid = ({ minRating }) => {
+  const movieGrid = results
+    .filter(movie => movie.vote_average >= minRating)
+    .map(movie => {
+      const imageSrc = `http://image.tmdb.org/t/p/w200/${movie.poster_path}`;
       return (
-        <div key={business.id}>
-          <a href={business.url}>
-            <img
-              width="200"
-              src={business.image_url}
-              alt={business.name}
-            />
-            <div>{business.name}</div>
-          </a>
-          <div>rating: {business.rating}</div>
-          <div>reviews: {business.review_count}</div>
+        <div key={movie.id}>
+          <img
+            width="200"
+            src={imageSrc}
+            alt={movie.title}
+          />
+          <div>{movie.title}</div>
+          <div>rating: {movie.vote_average}</div>
+          <div>reviews: {movie.vote_count}</div>
         </div>
       );
     });
-  return <div>{restaurantGrid}</div>;
+  return <div>{movieGrid}</div>;
 };
 
 class Main extends Component {
@@ -90,7 +89,7 @@ class Main extends Component {
           value={this.state.minRating}
           onChange={this.handleMinRatingChange}
         />
-        <RestaurantGrid minRating={this.state.minRating} />
+        <MovieGrid minRating={this.state.minRating} />
       </main>
     );
   }
