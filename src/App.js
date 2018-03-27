@@ -36,9 +36,9 @@ const MovieGrid = ({ movies, minRating }) => {
             src={imageSrc}
             alt={movie.title}
           />
-          <div>{movie.title}</div>
-          <div>rating: {movie.vote_average}</div>
-          <div>reviews: {movie.vote_count}</div>
+          <h3>{movie.title}</h3>
+          <div>Rating: {movie.vote_average}</div>
+          <div>Review Count: {movie.vote_count}</div>
         </div>
       );
     });
