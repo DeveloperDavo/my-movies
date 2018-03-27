@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { results } from "./movies.json";
 
 const Header = () => {
   return (
@@ -27,8 +26,8 @@ const MinRatingSelect = ({ value, onChange }) => {
   );
 };
 
-const MovieGrid = ({ minRating }) => {
-  const movieGrid = results
+const MovieGrid = ({ movies, minRating }) => {
+  const movieGrid = movies
     .filter(movie => movie.vote_average >= minRating)
     .map(movie => {
       const imageSrc = `http://image.tmdb.org/t/p/w200/${movie.poster_path}`;
@@ -71,20 +70,26 @@ class Main extends Component {
           value={this.state.minRating}
           onChange={this.handleMinRatingChange}
         />
-        <MovieGrid minRating={this.state.minRating} />
+        <MovieGrid movies={this.props.movies}minRating={this.state.minRating} />
       </main>
     );
   }
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {movies: []};
+  }
+
   componentDidMount() {
+    const self = this;
     fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&page=1`)
-      .then(function(response) {
+      .then(response => {
         return response.json();
       })
-      .then(function(myJson) {
-        console.log(myJson);
+      .then(json =>  {
+        self.setState({movies: json.results})
     });
   }
 
@@ -92,7 +97,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Main />
+        <Main movies={this.state.movies} />
       </div>
     );
   }
