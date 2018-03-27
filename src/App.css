@@ -11,3 +11,16 @@
 .App-title {
   font-size: 1.5em;
 }
+
+.MovieGrid--movie-item {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+@media (min-width: 992px) { 
+  .MovieGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+  }
+}

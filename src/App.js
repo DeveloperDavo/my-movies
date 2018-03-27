@@ -30,7 +30,7 @@ const MovieGrid = ({ movies, minRating }) => {
     .map(movie => {
       const imageSrc = `http://image.tmdb.org/t/p/w200/${movie.poster_path}`;
       return (
-        <div key={movie.id}>
+        <div className="MovieGrid--movie-item" key={movie.id}>
           <img
             width="200"
             src={imageSrc}
@@ -42,7 +42,7 @@ const MovieGrid = ({ movies, minRating }) => {
         </div>
       );
     });
-  return <div>{movieGrid}</div>;
+  return <div className="MovieGrid">{movieGrid}</div>;
 };
 
 const Attribution = () => {
