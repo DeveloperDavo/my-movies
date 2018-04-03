@@ -59,13 +59,8 @@ const Attribution = () => {
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = { searchText: "", minRating: "4.5" };
-    this.handleSearchTextChange = this.handleSearchTextChange.bind(this);
+    this.state = { minRating: "4.5" };
     this.handleMinRatingChange = this.handleMinRatingChange.bind(this);
-  }
-
-  handleSearchTextChange(e) {
-    this.setState({ searchText: e.target.value });
   }
 
   handleMinRatingChange(e) {
