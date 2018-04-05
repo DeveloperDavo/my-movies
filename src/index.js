@@ -13,7 +13,7 @@ export const changeMinRating = minRating => {
   }
 }
 
-function handleActions(state = { minRating: 0 }, action) {
+const handleActions = (state = { minRating: 0 }, action) => {
   switch (action.type) {
     case 'changeMinRating':
       return { minRating: action.minRating }

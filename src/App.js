@@ -73,7 +73,7 @@ const MainComponent = ({ minRating, handleMinRatingChange, movies }) => {
   );
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   return {
     minRating: state.minRating
   }
