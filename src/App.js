@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import { results } from "./movies.json";
+import { connect } from 'react-redux'
+import { changeMinRating } from './index'
 
 const Header = () => {
   return (
@@ -57,30 +59,41 @@ const Attribution = () => {
   )
 }
 
-class Main extends Component {
+class MainComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = { minRating: "4.5" };
     this.handleMinRatingChange = this.handleMinRatingChange.bind(this);
   }
 
   handleMinRatingChange(e) {
-    this.setState({ minRating: e.target.value });
+    const { dispatch } = this.props;
+    dispatch(changeMinRating(e.target.value));
   }
 
   render() {
+    const { minRating } = this.props;
     return (
       <main>
         <MinRatingSelect
-          value={this.state.minRating}
+          value={minRating}
           onChange={this.handleMinRatingChange}
         />
-        <MovieGrid movies={this.props.movies}minRating={this.state.minRating} />
+        <MovieGrid movies={this.props.movies} minRating={minRating} />
         <Attribution />
       </main>
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    minRating: state.minRating
+  }
+}
+
+const Main = connect(
+  mapStateToProps,
+)(MainComponent)
 
 class App extends Component {
   constructor(props) {
