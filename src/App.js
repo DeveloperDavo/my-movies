@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { results } from "./movies.json";
 import { connect } from 'react-redux'
-import { changeMinRating } from './index'
+import { changeMinRating } from './actions/index'
 
 const Header = () => {
   return (
