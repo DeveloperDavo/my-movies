@@ -50,12 +50,12 @@ const MovieGrid = ({ movies, minRating }) => {
 
 const Attribution = () => {
   return (
-    <div>
-      <img height="20" src="tmdb-logo.png" alt="tmdb logo"/>
-      <span>
+    <footer className="Attribution">
+      <img className="Attribution--logo"src="tmdb-logo.png" alt="tmdb logo"/>
+      <div className="Attribution--text">
         This product uses the TMDb API but is not endorsed or certified by TMDb.
-      </span>
-    </div>
+      </div>
+    </footer>
   )
 }
 

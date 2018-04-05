@@ -37,3 +37,17 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.Attribution {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.Attribution--logo {
+  align-self: center;
+  height: 2rem;
+}
+.Attribution--text {
+  padding: 1rem;
+  text-align: initial;
+}
