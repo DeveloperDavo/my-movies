@@ -20,7 +20,7 @@ const MinRatingSelect = ({ value, onChange }) => {
   return (
     <div>
       <label>Choose a minimum rating: </label>
-      <select value={value} onChange={onChange}>
+      <select className="MinRatingSelect--select" value={value} onChange={onChange}>
         {options}
       </select>
     </div>

@@ -17,6 +17,13 @@
   font-size: 1.5em;
 }
 
+.MinRatingSelect--select {
+  display: inline-block;
+  height: 2rem;
+  vertical-align: middle;
+  border: 1px solid #ced4da;
+}
+
 .MovieGrid--movie-item {
   margin: 1rem;
   padding: 1rem;
