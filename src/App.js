@@ -59,30 +59,18 @@ const Attribution = () => {
   )
 }
 
-class MainComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.handleMinRatingChange = this.handleMinRatingChange.bind(this);
-  }
-
-  handleMinRatingChange(e) {
-    const { dispatch } = this.props;
-    dispatch(changeMinRating(e.target.value));
-  }
-
-  render() {
-    const { minRating } = this.props;
-    return (
-      <main>
-        <MinRatingSelect
-          value={minRating}
-          onChange={this.handleMinRatingChange}
-        />
-        <MovieGrid movies={this.props.movies} minRating={minRating} />
-        <Attribution />
-      </main>
-    );
-  }
+const MainComponent = ({ minRating, handleMinRatingChange, movies }) => {
+  handleMinRatingChange.bind(this);
+  return (
+    <main>
+      <MinRatingSelect
+        value={minRating}
+        onChange={handleMinRatingChange}
+      />
+      <MovieGrid movies={movies} minRating={minRating} />
+      <Attribution />
+    </main>
+  );
 }
 
 function mapStateToProps(state) {
@@ -91,8 +79,13 @@ function mapStateToProps(state) {
   }
 }
 
+const mapDispatchToProps = dispatch => ({
+  handleMinRatingChange: e => dispatch(changeMinRating(e.target.value))
+})
+
 const Main = connect(
   mapStateToProps,
+  mapDispatchToProps,
 )(MainComponent)
 
 class App extends Component {
