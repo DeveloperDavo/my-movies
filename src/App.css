@@ -23,9 +23,17 @@
   background-color: white;
 }
 
+.MovieGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) { 
+  .MovieGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (min-width: 992px) { 
   .MovieGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
