@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import { results } from "./movies.json";
 
 const Header = () => {
   return (
@@ -89,13 +90,13 @@ class App extends Component {
 
   componentDidMount() {
     const self = this;
-    fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&page=1`)
-      .then(response => {
-        return response.json();
-      })
-      .then(json =>  {
-        self.setState({movies: json.results})
-    });
+    // fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&page=1`)
+    //   .then(response => {
+    //     return response.json();
+    //   })
+    //   .then(json =>  {
+        self.setState({movies: results})
+    // });
   }
 
   render() {
