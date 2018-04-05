@@ -63,6 +63,7 @@ const MainComponent = ({ minRating, handleMinRatingChange, movies }) => {
   handleMinRatingChange.bind(this);
   return (
     <main>
+      <div className="Main--title">Movies now playing</div>
       <MinRatingSelect
         value={minRating}
         onChange={handleMinRatingChange}
