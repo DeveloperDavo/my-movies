@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { results } from "./movies.json";
-import { connect } from 'react-redux'
-import { changeMinRating } from './actions/index'
+import { Main } from "./containers/index";
 
 const Header = () => {
   return (
@@ -12,7 +11,7 @@ const Header = () => {
   );
 };
 
-const MinRatingSelect = ({ value, onChange }) => {
+export const MinRatingSelect = ({ value, onChange }) => {
   const options = [<option key="0" value="0">none</option>];
   for (let i = 5; i <= 10; i = i + 0.5) {
     options.push(<option key={i} value={i}>{i}</option>);
@@ -27,7 +26,7 @@ const MinRatingSelect = ({ value, onChange }) => {
   );
 };
 
-const MovieGrid = ({ movies, minRating }) => {
+export const MovieGrid = ({ movies, minRating }) => {
   const movieGrid = movies
     .filter(movie => movie.vote_average >= minRating)
     .map(movie => {
@@ -48,7 +47,7 @@ const MovieGrid = ({ movies, minRating }) => {
   return <div className="MovieGrid">{movieGrid}</div>;
 };
 
-const Attribution = () => {
+export const Attribution = () => {
   return (
     <footer className="Attribution">
       <img className="Attribution--logo"src="tmdb-logo.png" alt="tmdb logo"/>
@@ -58,36 +57,6 @@ const Attribution = () => {
     </footer>
   )
 }
-
-const MainComponent = ({ minRating, handleMinRatingChange, movies }) => {
-  handleMinRatingChange.bind(this);
-  return (
-    <main>
-      <div className="Main--title">Movies now playing</div>
-      <MinRatingSelect
-        value={minRating}
-        onChange={handleMinRatingChange}
-      />
-      <MovieGrid movies={movies} minRating={minRating} />
-      <Attribution />
-    </main>
-  );
-}
-
-const mapStateToProps = state => {
-  return {
-    minRating: state.minRating
-  }
-}
-
-const mapDispatchToProps = dispatch => ({
-  handleMinRatingChange: e => dispatch(changeMinRating(e.target.value))
-})
-
-const Main = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(MainComponent)
 
 class App extends Component {
   constructor(props) {
