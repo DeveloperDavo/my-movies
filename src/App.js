@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { results } from "./movies.json";
-import { Main } from "./containers/index";
+import { Main } from "./containers";
 
 const Header = () => {
   return (
