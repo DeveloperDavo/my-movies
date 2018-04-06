@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { changeMinRating } from './actions'
-import { MainComponent } from './MainComponent'
+import { MainComponent } from './components'
 
 const mapStateToProps = state => {
   return {

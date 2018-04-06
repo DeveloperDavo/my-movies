@@ -47,7 +47,6 @@ const Attribution = () => {
   )
 }
 
-
 export const MainComponent = ({ minRating, handleMinRatingChange, movies }) => {
   handleMinRatingChange.bind(this);
   return (
