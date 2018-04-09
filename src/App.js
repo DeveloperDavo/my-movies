@@ -2,14 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { results } from "./movies.json";
 import { Main } from "./containers";
-
-const Header = () => {
-  return (
-    <header className="App-header">
-      <h1 className="App-title">My Movies</h1>
-    </header>
-  );
-};
+import { Header } from "./components";
 
 class App extends Component {
   constructor(props) {

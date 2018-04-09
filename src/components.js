@@ -1,5 +1,14 @@
 import React from "react";
 
+export const Header = () => {
+  return (
+    <header className="App-header">
+      <h1 className="App-title">My Movies</h1>
+    </header>
+  );
+};
+
+
 const MinRatingSelect = ({ value, onChange }) => {
   const options = [<option key="0" value="0">none</option>];
   for (let i = 5; i <= 10; i = i + 0.5) {
