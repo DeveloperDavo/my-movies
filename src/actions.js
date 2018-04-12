@@ -1,4 +1,4 @@
-import { results } from "./movies.json";
+// import { results } from "./movies.json";
 
 export const CHANGE_MIN_RATING = "CHANGE_MIN_RATING"
 export const RECEIVE_MOVIES = "RECEIVE_MOVIES"
@@ -19,9 +19,9 @@ export const receiveMovies = json => {
 
 export const fetchMovies = () => {
   return dispatch => {
-    // return fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&page=1`)
-    // .then(response => response.json()) 
-    // .then(json => dispatch(receiveMovies(json)))
-    return dispatch(receiveMovies(results))
+    return fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&page=1`)
+    .then(response => response.json()) 
+    .then(json => dispatch(receiveMovies(json.results)))
+    // return dispatch(receiveMovies(results))
   }
 }
