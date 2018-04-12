@@ -1,5 +1,6 @@
 # My Movies
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project was bootstrapped with
+[Create React App](https://github.com/facebookincubator/create-react-app).
 It uses the [TMDB API](https://www.themoviedb.org/documentation/api).
 
 ## Set up
@@ -8,3 +9,4 @@ It uses the [TMDB API](https://www.themoviedb.org/documentation/api).
 
 ## Run
 * Run the app in development mode `yarn start`
+* Run the tests with `yarn test`
