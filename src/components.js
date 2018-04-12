@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
+import { fetchMovies } from "./actions";
 
 export const Header = () => {
   return (
@@ -7,7 +8,6 @@ export const Header = () => {
     </header>
   );
 };
-
 
 const MinRatingSelect = ({ value, onChange }) => {
   const options = [<option key="0" value="0">none</option>];
@@ -69,4 +69,11 @@ export const MainComponent = ({ minRating, handleMinRatingChange, movies }) => {
       <Attribution />
     </main>
   );
+}
+
+export class AsyncComponent extends Component {
+  componentDidMount() {
+    this.props.dispatch(fetchMovies())
+  }
+  render(){return null}
 }
