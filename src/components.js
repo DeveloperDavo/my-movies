@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { fetchMovies } from "./actions";
 
 export const Header = () => {
   return (
@@ -56,24 +55,30 @@ const Attribution = () => {
   )
 }
 
-export const MainComponent = ({ minRating, handleMinRatingChange, movies }) => {
-  handleMinRatingChange.bind(this);
-  return (
-    <main>
-      <div className="Main--title">Movies now playing</div>
-      <MinRatingSelect
-        value={minRating}
-        onChange={handleMinRatingChange}
-      />
-      <MovieGrid movies={movies} minRating={minRating} />
-      <Attribution />
-    </main>
-  );
-}
-
-export class AsyncComponent extends Component {
-  componentDidMount() {
-    this.props.dispatch(fetchMovies())
+export class MainComponent extends Component {
+  constructor(props) {
+    super(props)
+    const { handleMinRatingChange, handleFetchMovies } = this.props;
+    handleMinRatingChange.bind(this);
+    handleFetchMovies.bind(this);
   }
-  render(){return null}
+
+  componentDidMount() {
+    this.props.handleFetchMovies()
+  }
+
+  render() {
+    const { minRating, handleMinRatingChange, movies } = this.props;
+    return (
+      <main>
+        <div className="Main--title">Movies now playing</div>
+        <MinRatingSelect
+          value={minRating}
+          onChange={handleMinRatingChange}
+        />
+        <MovieGrid movies={movies} minRating={minRating} />
+        <Attribution />
+      </main>
+    );
+  }
 }

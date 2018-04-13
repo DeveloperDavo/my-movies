@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { changeMinRating } from './actions'
-import { MainComponent, AsyncComponent } from './components'
+import { changeMinRating, fetchMovies } from './actions'
+import { MainComponent } from './components'
 
 const mapStateToProps = state => {
   return {
@@ -10,20 +10,11 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  handleMinRatingChange: e => dispatch(changeMinRating(e.target.value))
+  handleMinRatingChange: e => dispatch(changeMinRating(e.target.value)),
+  handleFetchMovies: () => dispatch(fetchMovies())
 })
 
 export const Main = connect(
   mapStateToProps,
   mapDispatchToProps,
 )(MainComponent)
-
-const mapAsyncStateToProps = state => {
-  return { 
-    movies: state.handleNetworkActions.movies
-  }
-}
-
-export const AsyncApp = connect(
-  mapAsyncStateToProps
-)(AsyncComponent)

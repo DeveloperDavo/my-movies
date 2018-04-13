@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Main, AsyncApp } from "./containers";
+import { Main } from "./containers";
 import { Header } from "./components";
 
 class App extends Component {
@@ -9,7 +9,6 @@ class App extends Component {
       <div className="App">
         <Header />
         <Main />
-        <AsyncApp />
       </div>
     );
   }
