@@ -3,12 +3,10 @@
 export const CHANGE_MIN_RATING = "CHANGE_MIN_RATING"
 export const RECEIVE_MOVIES = "RECEIVE_MOVIES"
 
-export const changeMinRating = minRating => {
-  return {
-    type: CHANGE_MIN_RATING,
-    minRating
-  }
-}
+export const changeMinRating = minRating => ({
+  type: CHANGE_MIN_RATING,
+  minRating
+})
 
 export const receiveMovies = json => {
   return {
