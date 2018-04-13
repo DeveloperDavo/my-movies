@@ -8,5 +8,8 @@ It uses the [TMDB API](https://www.themoviedb.org/documentation/api).
 * Install dependencies with `yarn`
 
 ## Run
-* Run the app in development mode `yarn start`
+Run the app in development mode `yarn start`
+
+## Test
 * Run the tests with `yarn test`
+* Run the tests with coverage with `yarn test --coverage`
