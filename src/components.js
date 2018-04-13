@@ -1,14 +1,32 @@
 import React, { Component } from "react";
+import styled from 'styled-components';
 
 export const Header = () => {
+  const Title = styled.h1`
+    margin: 0;
+    font-size: 3rem;
+  `;
+
+  const HeaderWrapper = styled.header`
+    background-color: #222;
+    color: white;
+  `;
+
   return (
-    <header className="App-header">
-      <h1 className="App-title">My Movies</h1>
-    </header>
+    <HeaderWrapper>
+      <Title>My Movies</Title>
+    </HeaderWrapper>
   );
 };
 
 const MinRatingSelect = ({ value, onChange }) => {
+  const Select = styled.select`
+    display: inline-block;
+    height: 2rem;
+    vertical-align: middle;
+    border: 1px solid #ced4da;
+  `;
+
   const options = [<option key="0" value="0">none</option>];
   for (let i = 5; i <= 10; i = i + 0.5) {
     options.push(<option key={i} value={i}>{i}</option>);
@@ -16,20 +34,36 @@ const MinRatingSelect = ({ value, onChange }) => {
   return (
     <div>
       <label>Choose a minimum rating: </label>
-      <select className="MinRatingSelect--select" value={value} onChange={onChange}>
+      <Select value={value} onChange={onChange}>
         {options}
-      </select>
+      </Select>
     </div>
   );
 };
 
 const MovieGrid = ({ movies, minRating }) => {
+  const MovieGridItem = styled.div`
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+  `;
+
+  const MovieGrid = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 576px) { 
+        grid-template-columns: 1fr 1fr;
+    @media (min-width: 992px) { 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  `;
+
   const movieGrid = movies
     .filter(movie => movie.vote_average >= minRating)
     .map(movie => {
       const imageSrc = `http://image.tmdb.org/t/p/w200/${movie.poster_path}`;
       return (
-        <div className="MovieGrid--movie-item" key={movie.id}>
+        <MovieGridItem key={movie.id}>
           <img
             width="200"
             src={imageSrc}
@@ -38,40 +72,60 @@ const MovieGrid = ({ movies, minRating }) => {
           <h3>{movie.title}</h3>
           <div>Rating: {movie.vote_average}</div>
           <div>Review Count: {movie.vote_count}</div>
-        </div>
+        </MovieGridItem>
       );
     });
-  return <div className="MovieGrid">{movieGrid}</div>;
+  return <MovieGrid>{movieGrid}</MovieGrid>;
 };
 
 const Attribution = () => {
+  const Footer = styled.footer`
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+  `;
+  const Logo = styled.img`
+    align-self: center;
+    height: 2rem;
+  `;
+  const AttributionText = styled.div`
+    padding: 1rem;
+    text-align: initial;
+  `;
   return (
-    <footer className="Attribution">
-      <img className="Attribution--logo"src="tmdb-logo.png" alt="tmdb logo"/>
-      <div className="Attribution--text">
+    <Footer>
+      <Logo src="tmdb-logo.png" alt="tmdb logo"/>
+      <AttributionText>
         This product uses the TMDb API but is not endorsed or certified by TMDb.
-      </div>
-    </footer>
+      </AttributionText>
+    </Footer>
   )
 }
 
 export class MainComponent extends Component {
   constructor(props) {
     super(props)
+
     const { handleMinRatingChange, handleFetchMovies } = this.props;
     handleMinRatingChange.bind(this);
     handleFetchMovies.bind(this);
   }
+
 
   componentDidMount() {
     this.props.handleFetchMovies()
   }
 
   render() {
+    const Title = styled.div`
+      margin: 2rem;
+      font-size: 1.5em;
+    `;
+
     const { minRating, handleMinRatingChange, movies } = this.props;
     return (
       <main>
-        <div className="Main--title">Movies now playing</div>
+        <Title>Movies now playing</Title>
         <MinRatingSelect
           value={minRating}
           onChange={handleMinRatingChange}
