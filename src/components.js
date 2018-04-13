@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import styled from 'styled-components';
 
+const smallScreen = '(min-width: 576px)'
+const largeScreen = '(min-width: 992px)'
+
 export const Header = () => {
   const Title = styled.h1`
     margin: 0;
@@ -51,9 +54,9 @@ const MovieGrid = ({ movies, minRating }) => {
   const MovieGrid = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    @media (min-width: 576px) { 
+    @media ${smallScreen} { 
         grid-template-columns: 1fr 1fr;
-    @media (min-width: 992px) { 
+    @media ${largeScreen} { 
         grid-template-columns: 1fr 1fr 1fr;
     }
   `;
