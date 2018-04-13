@@ -6,6 +6,7 @@ It uses the [TMDB API](https://www.themoviedb.org/documentation/api).
 ## Set up
 * Create an `.env` file and add `REACT_APP_TMDB_API_KEY=${YOUR_API_KEY}` to it
 * Install dependencies with `yarn`
+* Install [Watchman](https://facebook.github.io/watchman/docs/install.html)
 
 ## Run
 Run the app in development mode `yarn start`
