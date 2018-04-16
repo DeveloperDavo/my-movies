@@ -8,10 +8,10 @@ export const changeMinRating = minRating => ({
   minRating
 })
 
-export const receiveMovies = json => {
+export const receiveMovies = results => {
   return {
     type: RECEIVE_MOVIES,
-    movies: json
+    movies: results
   }
 }
 
