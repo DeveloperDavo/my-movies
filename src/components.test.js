@@ -43,4 +43,18 @@ describe("Main component", () => {
 
     expect(tree).toMatchSnapshot();
   })
+  it("should match snapshot with min rating", () => {
+    const mainComp = 
+    <MainComponent 
+      handleMinRatingChange={() => {}} 
+      handleFetchMovies={() => {}} 
+      minRating={8}
+      movies={results}
+    />
+    const tree = renderer.create(
+      mainComp
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  })
 })

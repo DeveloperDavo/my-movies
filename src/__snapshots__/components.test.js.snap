@@ -110,6 +110,205 @@ exports[`Main component should match empty snapshot 1`] = `
 </main>
 `;
 
+exports[`Main component should match snapshot with min rating 1`] = `
+<main>
+  <div
+    className="sc-jzJRlG gMGYdn"
+  >
+    Movies now playing
+  </div>
+  <div>
+    <label>
+      Choose a minimum rating: 
+    </label>
+    <select
+      className="sc-cSHVUG jjSnWe"
+      onChange={[Function]}
+      value={8}
+    >
+      <option
+        value="0"
+      >
+        none
+      </option>
+      <option
+        value={5}
+      >
+        5
+      </option>
+      <option
+        value={5.5}
+      >
+        5.5
+      </option>
+      <option
+        value={6}
+      >
+        6
+      </option>
+      <option
+        value={6.5}
+      >
+        6.5
+      </option>
+      <option
+        value={7}
+      >
+        7
+      </option>
+      <option
+        value={7.5}
+      >
+        7.5
+      </option>
+      <option
+        value={8}
+      >
+        8
+      </option>
+      <option
+        value={8.5}
+      >
+        8.5
+      </option>
+      <option
+        value={9}
+      >
+        9
+      </option>
+      <option
+        value={9.5}
+      >
+        9.5
+      </option>
+      <option
+        value={10}
+      >
+        10
+      </option>
+    </select>
+  </div>
+  <div
+    className="sc-chPdSV ifgDvI"
+  >
+    <div
+      className="sc-kAzzGY bwFQux"
+    >
+      <img
+        alt="The Greatest Showman"
+        src="http://image.tmdb.org/t/p/w200//dfhztJRiElqmYW4kpvjYe1gENsD.jpg"
+        width="200"
+      />
+      <h3>
+        The Greatest Showman
+      </h3>
+      <div>
+        Rating: 
+        8
+      </div>
+      <div>
+        Review Count: 
+        1595
+      </div>
+    </div>
+    <div
+      className="sc-kAzzGY bwFQux"
+    >
+      <img
+        alt="Three Billboards Outside Ebbing, Missouri"
+        src="http://image.tmdb.org/t/p/w200//vgvw6w1CtcFkuXXn004S5wQsHRl.jpg"
+        width="200"
+      />
+      <h3>
+        Three Billboards Outside Ebbing, Missouri
+      </h3>
+      <div>
+        Rating: 
+        8.2
+      </div>
+      <div>
+        Review Count: 
+        2301
+      </div>
+    </div>
+    <div
+      className="sc-kAzzGY bwFQux"
+    >
+      <img
+        alt="Wonder"
+        src="http://image.tmdb.org/t/p/w200//ouYgAatYH4JzIThj6FI3UYf31RI.jpg"
+        width="200"
+      />
+      <h3>
+        Wonder
+      </h3>
+      <div>
+        Rating: 
+        8.1
+      </div>
+      <div>
+        Review Count: 
+        1499
+      </div>
+    </div>
+    <div
+      className="sc-kAzzGY bwFQux"
+    >
+      <img
+        alt="Call Me by Your Name"
+        src="http://image.tmdb.org/t/p/w200//nPTjj6ZfBXXBwOhd7iUy6tyuKWt.jpg"
+        width="200"
+      />
+      <h3>
+        Call Me by Your Name
+      </h3>
+      <div>
+        Rating: 
+        8.3
+      </div>
+      <div>
+        Review Count: 
+        1769
+      </div>
+    </div>
+    <div
+      className="sc-kAzzGY bwFQux"
+    >
+      <img
+        alt="The Lion King"
+        src="http://image.tmdb.org/t/p/w200//bKPtXn9n4M4s8vvZrbw40mYsefB.jpg"
+        width="200"
+      />
+      <h3>
+        The Lion King
+      </h3>
+      <div>
+        Rating: 
+        8.1
+      </div>
+      <div>
+        Review Count: 
+        7007
+      </div>
+    </div>
+  </div>
+  <footer
+    className="sc-kgoBCf bYtNgI"
+  >
+    <img
+      alt="tmdb logo"
+      className="sc-kGXeez bWwPEQ"
+      src="tmdb-logo.png"
+    />
+    <div
+      className="sc-kpOJdX bsNBXO"
+    >
+      This product uses the TMDb API but is not endorsed or certified by TMDb.
+    </div>
+  </footer>
+</main>
+`;
+
 exports[`Main component should match snapshot with movie data 1`] = `
 <main>
   <div
