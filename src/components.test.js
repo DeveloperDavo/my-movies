@@ -1,7 +1,6 @@
 import React from "react";
 import { Header, MainComponent } from "./components";
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
 import { results } from "./movies.json";
 
 describe("Header", () => {
