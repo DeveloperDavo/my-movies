@@ -1,6 +1,9 @@
 import React from 'react';
-import { changeMinRating, receiveMovies } from './actions';
+import { changeMinRating, receiveMovies, RECEIVE_MOVIES, fetchMovies } from './actions';
 import { results } from "./movies.json";
+import configureMockStore from 'redux-mock-store'
+import thunk from 'redux-thunk'
+import fetchMock from 'fetch-mock'
 
 describe('actions', () => {
   it('should change min rating', () => {
@@ -16,4 +19,31 @@ describe('actions', () => {
       movies: results
     })
   });
+})
+
+const middlewares = [thunk]
+const mockStore = configureMockStore(middlewares)
+
+describe('async actions', () => {
+  afterEach(() => {
+    fetchMock.reset()
+    fetchMock.restore()
+  })
+
+  it('creates RECEIVE_MOVIES when fetching movies is complete', () => {
+    const matcher = '*'; // all URLS
+    const response = { body: { results}, headers: { 'content-type': 'application/json' } };
+    fetchMock.getOnce(matcher, response);
+
+    const expectedActions = [
+      { type: RECEIVE_MOVIES, movies: results },
+    ]
+
+    const store = mockStore()
+
+    return store.dispatch(fetchMovies()).then(() => {
+      expect(store.getActions()).toEqual(expectedActions)
+    })
+
+  })
 })
