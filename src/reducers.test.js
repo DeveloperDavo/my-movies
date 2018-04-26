@@ -13,8 +13,8 @@ describe("reducers", () => {
 
     it("should handle changing the min rating", () => {
       const minRating = 7;
-      expect(handleUserActions(undefined, changeMinRating(minRating))).toEqual({
-        minRating: 7
+      expect(handleUserActions({ minRating: '4'}, changeMinRating(minRating))).toEqual({
+        minRating: minRating
       })
     });
   });
