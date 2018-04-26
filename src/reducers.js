@@ -17,7 +17,6 @@ export const handleNetworkActions = (state = {movies: []}, action) => {
   switch (action.type) { 
     case RECEIVE_MOVIES:
       return ({
-        ...state, 
         movies: action.movies, 
       })
     default: 
