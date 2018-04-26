@@ -20,6 +20,12 @@ describe("reducers", () => {
   });
 
   describe("network actions", () => {
+    it("should return initial state", () => {
+      expect(handleNetworkActions(undefined, {})).toEqual({
+        movies: []
+      })
+    });
+
     it("should handle receiving movies", () => {
       expect(handleNetworkActions({movies: []}, receiveMovies(results))).toEqual({
         movies: results
