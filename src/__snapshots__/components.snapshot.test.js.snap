@@ -192,7 +192,7 @@ exports[`Main component should match snapshot with min rating 1`] = `
     className="sc-chPdSV ifgDvI"
   >
     <div
-      className="sc-kAzzGY bwFQux"
+      className="MovieGridItem sc-kAzzGY bwFQux"
     >
       <img
         alt="The Greatest Showman"
@@ -212,7 +212,7 @@ exports[`Main component should match snapshot with min rating 1`] = `
       </div>
     </div>
     <div
-      className="sc-kAzzGY bwFQux"
+      className="MovieGridItem sc-kAzzGY bwFQux"
     >
       <img
         alt="Three Billboards Outside Ebbing, Missouri"
@@ -232,7 +232,7 @@ exports[`Main component should match snapshot with min rating 1`] = `
       </div>
     </div>
     <div
-      className="sc-kAzzGY bwFQux"
+      className="MovieGridItem sc-kAzzGY bwFQux"
     >
       <img
         alt="Wonder"
@@ -252,7 +252,7 @@ exports[`Main component should match snapshot with min rating 1`] = `
       </div>
     </div>
     <div
-      className="sc-kAzzGY bwFQux"
+      className="MovieGridItem sc-kAzzGY bwFQux"
     >
       <img
         alt="Call Me by Your Name"
@@ -272,7 +272,7 @@ exports[`Main component should match snapshot with min rating 1`] = `
       </div>
     </div>
     <div
-      className="sc-kAzzGY bwFQux"
+      className="MovieGridItem sc-kAzzGY bwFQux"
     >
       <img
         alt="The Lion King"
@@ -391,7 +391,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
     className="sc-gqjmRU etoXPi"
   >
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Fifty Shades Freed"
@@ -411,7 +411,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Black Panther"
@@ -431,7 +431,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Coco"
@@ -451,7 +451,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Tomb Raider"
@@ -471,7 +471,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Meet Me In St. Gallen"
@@ -491,7 +491,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Annihilation"
@@ -511,7 +511,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="The Shape of Water"
@@ -531,7 +531,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Olaf's Frozen Adventure"
@@ -551,7 +551,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Pacific Rim: Uprising"
@@ -571,7 +571,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Pitch Perfect 3"
@@ -591,7 +591,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="The Greatest Showman"
@@ -611,7 +611,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Three Billboards Outside Ebbing, Missouri"
@@ -631,7 +631,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Downsizing"
@@ -651,7 +651,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Wonder"
@@ -671,7 +671,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="I Kill Giants"
@@ -691,7 +691,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Maze Runner: The Death Cure"
@@ -711,7 +711,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="The Monkey King 3: Kingdom of Women"
@@ -731,7 +731,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Red Sparrow"
@@ -751,7 +751,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="Call Me by Your Name"
@@ -771,7 +771,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="MovieGridItem sc-gZMcBi imdaMP"
     >
       <img
         alt="The Lion King"
