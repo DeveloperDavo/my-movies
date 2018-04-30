@@ -3,6 +3,8 @@ import { Header, MainComponent } from "./components";
 import renderer from 'react-test-renderer';
 import { results } from "./movies.json";
 
+const slicedResults = results.slice(0, 4);
+
 describe("Header", () => {
   it("should match snapshot", () => {
     const tree = renderer.create(
@@ -34,7 +36,7 @@ describe("Main component", () => {
       handleMinRatingChange={() => {}} 
       handleFetchMovies={() => {}} 
       minRating={0}
-      movies={results}
+      movies={slicedResults}
     />
     const tree = renderer.create(
       mainComp
@@ -48,7 +50,7 @@ describe("Main component", () => {
       handleMinRatingChange={() => {}} 
       handleFetchMovies={() => {}} 
       minRating={8}
-      movies={results}
+      movies={slicedResults}
     />
     const tree = renderer.create(
       mainComp
