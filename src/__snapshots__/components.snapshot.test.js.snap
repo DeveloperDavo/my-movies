@@ -386,3 +386,199 @@ exports[`Main component should match snapshot with movie data 1`] = `
   </footer>
 </main>
 `;
+
+exports[`Main component should select a min rating 1`] = `
+<main>
+  <div
+    className="sc-dxgOiQ pGijw"
+  >
+    Movies now playing
+  </div>
+  <div>
+    <label>
+      Choose a minimum rating: 
+    </label>
+    <select
+      className="sc-ckVGcZ ccYMdj"
+      onChange={[Function]}
+      value={0}
+    >
+      <option
+        value="0"
+      >
+        none
+      </option>
+      <option
+        value={5}
+      >
+        5
+      </option>
+      <option
+        value={5.5}
+      >
+        5.5
+      </option>
+      <option
+        value={6}
+      >
+        6
+      </option>
+      <option
+        value={6.5}
+      >
+        6.5
+      </option>
+      <option
+        value={7}
+      >
+        7
+      </option>
+      <option
+        value={7.5}
+      >
+        7.5
+      </option>
+      <option
+        value={8}
+      >
+        8
+      </option>
+      <option
+        value={8.5}
+      >
+        8.5
+      </option>
+      <option
+        value={9}
+      >
+        9
+      </option>
+      <option
+        value={9.5}
+      >
+        9.5
+      </option>
+      <option
+        value={10}
+      >
+        10
+      </option>
+    </select>
+  </div>
+  <div
+    className="sc-eNQAEJ fCssbo"
+  />
+  <footer
+    className="sc-hMqMXs qbXhT"
+  >
+    <img
+      alt="tmdb logo"
+      className="sc-kEYyzF iArugn"
+      src="tmdb-logo.png"
+    />
+    <div
+      className="sc-kkGfuU jlULYF"
+    >
+      This product uses the TMDb API but is not endorsed or certified by TMDb.
+    </div>
+  </footer>
+</main>
+`;
+
+exports[`Main component should select a min rating 2`] = `
+<main>
+  <div
+    className="sc-iAyFgw kNeyEc"
+  >
+    Movies now playing
+  </div>
+  <div>
+    <label>
+      Choose a minimum rating: 
+    </label>
+    <select
+      className="sc-hSdWYo ifeOWd"
+      onChange={[Function]}
+      value={7}
+    >
+      <option
+        value="0"
+      >
+        none
+      </option>
+      <option
+        value={5}
+      >
+        5
+      </option>
+      <option
+        value={5.5}
+      >
+        5.5
+      </option>
+      <option
+        value={6}
+      >
+        6
+      </option>
+      <option
+        value={6.5}
+      >
+        6.5
+      </option>
+      <option
+        value={7}
+      >
+        7
+      </option>
+      <option
+        value={7.5}
+      >
+        7.5
+      </option>
+      <option
+        value={8}
+      >
+        8
+      </option>
+      <option
+        value={8.5}
+      >
+        8.5
+      </option>
+      <option
+        value={9}
+      >
+        9
+      </option>
+      <option
+        value={9.5}
+      >
+        9.5
+      </option>
+      <option
+        value={10}
+      >
+        10
+      </option>
+    </select>
+  </div>
+  <div
+    className="sc-cvbbAY dQHQdj"
+  />
+  <footer
+    className="sc-jWBwVP lmeZLl"
+  >
+    <img
+      alt="tmdb logo"
+      className="sc-brqgnP devwwz"
+      src="tmdb-logo.png"
+    />
+    <div
+      className="sc-cMljjf bweLaX"
+    >
+      This product uses the TMDb API but is not endorsed or certified by TMDb.
+    </div>
+  </footer>
+</main>
+`;

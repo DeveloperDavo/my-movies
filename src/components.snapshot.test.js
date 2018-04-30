@@ -2,6 +2,10 @@ import React from "react";
 import { Header, MainComponent } from "./components";
 import renderer from 'react-test-renderer';
 import { results } from "./movies.json";
+import { changeMinRating } from './actions'
+import { Provider } from 'react-redux'
+import { store } from './store'
+import { connect } from 'react-redux'
 
 const slicedResults = results.slice(0, 4);
 
@@ -58,4 +62,37 @@ describe("Main component", () => {
 
     expect(tree).toMatchSnapshot();
   })
+
+  it("should select a min rating", () => {
+    const mapStateToProps = state => ({
+      minRating: state.handleUserActions.minRating,
+      movies: slicedResults
+    })
+    
+    const mapDispatchToProps = dispatch => ({
+      handleMinRatingChange: minRating => dispatch(changeMinRating(minRating)),
+      handleFetchMovies: () => dispatch(() => {})
+    })
+    
+    const Main = connect(
+      mapStateToProps,
+      mapDispatchToProps,
+    )(MainComponent)
+
+    const main = renderer.create(
+    <Provider store={store}>
+        <Main />
+    </Provider>
+    )
+
+    let tree = main.toJSON();
+
+    expect(tree).toMatchSnapshot();
+
+    const temp = tree.children[1].children[1].props.onChange(7);
+
+    tree = main.toJSON();
+    expect(tree).toMatchSnapshot();
+  })
+
 })
