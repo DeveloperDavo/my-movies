@@ -467,7 +467,88 @@ exports[`Main component should select a min rating 1`] = `
   </div>
   <div
     className="sc-eNQAEJ fCssbo"
-  />
+  >
+    <div
+      className="MovieGridItem sc-jKJlTe lhyryN"
+    >
+      <img
+        alt="Fifty Shades Freed"
+        src="http://image.tmdb.org/t/p/w200//jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg"
+        width="200"
+      />
+      <h3>
+        Fifty Shades Freed
+      </h3>
+      <div>
+        Rating: 
+        6.1
+      </div>
+      <div>
+        Review Count: 
+        1097
+      </div>
+    </div>
+    <div
+      className="MovieGridItem sc-jKJlTe lhyryN"
+    >
+      <img
+        alt="Black Panther"
+        src="http://image.tmdb.org/t/p/w200//uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
+        width="200"
+      />
+      <h3>
+        Black Panther
+      </h3>
+      <div>
+        Rating: 
+        7.4
+      </div>
+      <div>
+        Review Count: 
+        3477
+      </div>
+    </div>
+    <div
+      className="MovieGridItem sc-jKJlTe lhyryN"
+    >
+      <img
+        alt="Coco"
+        src="http://image.tmdb.org/t/p/w200//eKi8dIrr8voobbaGzDpe8w0PVbC.jpg"
+        width="200"
+      />
+      <h3>
+        Coco
+      </h3>
+      <div>
+        Rating: 
+        7.8
+      </div>
+      <div>
+        Review Count: 
+        3404
+      </div>
+    </div>
+    <div
+      className="MovieGridItem sc-jKJlTe lhyryN"
+    >
+      <img
+        alt="Tomb Raider"
+        src="http://image.tmdb.org/t/p/w200//ePyN2nX9t8SOl70eRW47Q29zUFO.jpg"
+        width="200"
+      />
+      <h3>
+        Tomb Raider
+      </h3>
+      <div>
+        Rating: 
+        6.1
+      </div>
+      <div>
+        Review Count: 
+        588
+      </div>
+    </div>
+  </div>
   <footer
     className="sc-hMqMXs qbXhT"
   >
@@ -565,7 +646,48 @@ exports[`Main component should select a min rating 2`] = `
   </div>
   <div
     className="sc-cvbbAY dQHQdj"
-  />
+  >
+    <div
+      className="MovieGridItem sc-eHgmQL gROLGe"
+    >
+      <img
+        alt="Black Panther"
+        src="http://image.tmdb.org/t/p/w200//uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
+        width="200"
+      />
+      <h3>
+        Black Panther
+      </h3>
+      <div>
+        Rating: 
+        7.4
+      </div>
+      <div>
+        Review Count: 
+        3477
+      </div>
+    </div>
+    <div
+      className="MovieGridItem sc-eHgmQL gROLGe"
+    >
+      <img
+        alt="Coco"
+        src="http://image.tmdb.org/t/p/w200//eKi8dIrr8voobbaGzDpe8w0PVbC.jpg"
+        width="200"
+      />
+      <h3>
+        Coco
+      </h3>
+      <div>
+        Rating: 
+        7.8
+      </div>
+      <div>
+        Review Count: 
+        3404
+      </div>
+    </div>
+  </div>
   <footer
     className="sc-jWBwVP lmeZLl"
   >
