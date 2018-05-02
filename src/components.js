@@ -66,7 +66,7 @@ export const MovieGrid = ({ movies, minRating }) => {
     .map(movie => {
       const imageSrc = `http://image.tmdb.org/t/p/w200/${movie.poster_path}`;
       return (
-        <MovieGridItem className='MovieGridItem' key={movie.id}>
+        <MovieGridItem name='MovieGridItem' key={movie.id}>
           <img
             width="200"
             src={imageSrc}

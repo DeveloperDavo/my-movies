@@ -296,7 +296,8 @@ exports[`Main component should match snapshot with movie data 1`] = `
     className="sc-gqjmRU etoXPi"
   >
     <div
-      className="MovieGridItem sc-gZMcBi imdaMP"
+      className="sc-gZMcBi imdaMP"
+      name="MovieGridItem"
     >
       <img
         alt="Fifty Shades Freed"
@@ -316,7 +317,8 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="MovieGridItem sc-gZMcBi imdaMP"
+      className="sc-gZMcBi imdaMP"
+      name="MovieGridItem"
     >
       <img
         alt="Black Panther"
@@ -336,7 +338,8 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="MovieGridItem sc-gZMcBi imdaMP"
+      className="sc-gZMcBi imdaMP"
+      name="MovieGridItem"
     >
       <img
         alt="Coco"
@@ -356,7 +359,8 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="MovieGridItem sc-gZMcBi imdaMP"
+      className="sc-gZMcBi imdaMP"
+      name="MovieGridItem"
     >
       <img
         alt="Tomb Raider"
@@ -477,7 +481,8 @@ exports[`Main component should select a min rating 1`] = `
     className="sc-eNQAEJ fCssbo"
   >
     <div
-      className="MovieGridItem sc-jKJlTe lhyryN"
+      className="sc-jKJlTe lhyryN"
+      name="MovieGridItem"
     >
       <img
         alt="Fifty Shades Freed"
@@ -497,7 +502,8 @@ exports[`Main component should select a min rating 1`] = `
       </div>
     </div>
     <div
-      className="MovieGridItem sc-jKJlTe lhyryN"
+      className="sc-jKJlTe lhyryN"
+      name="MovieGridItem"
     >
       <img
         alt="Black Panther"
@@ -517,7 +523,8 @@ exports[`Main component should select a min rating 1`] = `
       </div>
     </div>
     <div
-      className="MovieGridItem sc-jKJlTe lhyryN"
+      className="sc-jKJlTe lhyryN"
+      name="MovieGridItem"
     >
       <img
         alt="Coco"
@@ -537,7 +544,8 @@ exports[`Main component should select a min rating 1`] = `
       </div>
     </div>
     <div
-      className="MovieGridItem sc-jKJlTe lhyryN"
+      className="sc-jKJlTe lhyryN"
+      name="MovieGridItem"
     >
       <img
         alt="Tomb Raider"
@@ -658,7 +666,8 @@ exports[`Main component should select a min rating 2`] = `
     className="sc-cvbbAY dQHQdj"
   >
     <div
-      className="MovieGridItem sc-eHgmQL gROLGe"
+      className="sc-eHgmQL gROLGe"
+      name="MovieGridItem"
     >
       <img
         alt="Black Panther"
@@ -678,7 +687,8 @@ exports[`Main component should select a min rating 2`] = `
       </div>
     </div>
     <div
-      className="MovieGridItem sc-eHgmQL gROLGe"
+      className="sc-eHgmQL gROLGe"
+      name="MovieGridItem"
     >
       <img
         alt="Coco"

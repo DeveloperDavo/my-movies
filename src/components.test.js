@@ -32,7 +32,7 @@ describe("components", () => {
       const movieGridComp = <MovieGrid movies={movies.results} minRating={minRating} />;
       const wrapper = shallow(movieGridComp);
 
-      expect(wrapper.find('.MovieGridItem').length).toEqual(2);
+      expect(wrapper.find('[name="MovieGridItem"]').length).toEqual(2);
     });
   });
 });
