@@ -63,7 +63,7 @@ describe("Main component", () => {
     expect(tree).toMatchSnapshot();
   })
 
-  it("should select a min rating", () => {
+  const MainFake = () => {
     const mapStateToProps = state => ({
       minRating: state.handleUserActions.minRating,
       movies: slicedResults
@@ -74,14 +74,18 @@ describe("Main component", () => {
       handleFetchMovies: () => dispatch(() => {})
     })
     
-    const Main = connect(
+    const MainFake = connect(
       mapStateToProps,
       mapDispatchToProps,
     )(MainComponent)
 
+    return (<MainFake />)
+  }
+
+  it("should select a min rating", () => {
     const main = renderer.create(
     <Provider store={store}>
-        <Main />
+        <MainFake />
     </Provider>
     )
 
