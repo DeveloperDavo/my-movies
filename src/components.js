@@ -35,7 +35,7 @@ const MinRatingSelect = ({ value, onChange }) => {
     options.push(<option key={i} value={i}>{i}</option>);
   }
   return (
-    <div>
+    <div id="MinRatingSelect">
       <label>Choose a minimum rating: </label>
       <Select value={value} onChange={onChange}>
         {options}

@@ -19,7 +19,9 @@ exports[`Main component should match empty snapshot 1`] = `
   >
     Movies now playing
   </div>
-  <div>
+  <div
+    id="MinRatingSelect"
+  >
     <label>
       Choose a minimum rating: 
     </label>
@@ -117,7 +119,9 @@ exports[`Main component should match snapshot with min rating 1`] = `
   >
     Movies now playing
   </div>
-  <div>
+  <div
+    id="MinRatingSelect"
+  >
     <label>
       Choose a minimum rating: 
     </label>
@@ -215,7 +219,9 @@ exports[`Main component should match snapshot with movie data 1`] = `
   >
     Movies now playing
   </div>
-  <div>
+  <div
+    id="MinRatingSelect"
+  >
     <label>
       Choose a minimum rating: 
     </label>
@@ -394,7 +400,9 @@ exports[`Main component should select a min rating 1`] = `
   >
     Movies now playing
   </div>
-  <div>
+  <div
+    id="MinRatingSelect"
+  >
     <label>
       Choose a minimum rating: 
     </label>
@@ -573,7 +581,9 @@ exports[`Main component should select a min rating 2`] = `
   >
     Movies now playing
   </div>
-  <div>
+  <div
+    id="MinRatingSelect"
+  >
     <label>
       Choose a minimum rating: 
     </label>

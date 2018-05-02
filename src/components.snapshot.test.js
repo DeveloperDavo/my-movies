@@ -93,7 +93,8 @@ describe("Main component", () => {
 
     expect(tree).toMatchSnapshot();
 
-    const temp = tree.children[1].children[1].props.onChange(7);
+    tree.children.find(child => child.props.id === 'MinRatingSelect')
+      .children.find(child => child.type === 'select').props.onChange(7);
 
     tree = main.toJSON();
     expect(tree).toMatchSnapshot();
