@@ -1,7 +1,7 @@
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-import { MovieGrid } from "./components";
+import { MovieGrid, MovieGridItem } from "./components";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -32,7 +32,7 @@ describe("components", () => {
       const movieGridComp = <MovieGrid movies={movies.results} minRating={minRating} />;
       const wrapper = shallow(movieGridComp);
 
-      expect(wrapper.find('[name="MovieGridItem"]').length).toEqual(2);
+      expect(wrapper.find(MovieGridItem).length).toEqual(2);
     });
   });
 });

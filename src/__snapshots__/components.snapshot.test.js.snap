@@ -297,7 +297,6 @@ exports[`Main component should match snapshot with movie data 1`] = `
   >
     <div
       className="sc-gZMcBi imdaMP"
-      name="MovieGridItem"
     >
       <img
         alt="Fifty Shades Freed"
@@ -318,7 +317,6 @@ exports[`Main component should match snapshot with movie data 1`] = `
     </div>
     <div
       className="sc-gqjmRU hjPhi"
-      name="MovieGridItem"
     >
       <img
         alt="Black Panther"
@@ -339,7 +337,6 @@ exports[`Main component should match snapshot with movie data 1`] = `
     </div>
     <div
       className="sc-VigVT gwDSPQ"
-      name="MovieGridItem"
     >
       <img
         alt="Coco"
@@ -360,7 +357,6 @@ exports[`Main component should match snapshot with movie data 1`] = `
     </div>
     <div
       className="sc-jTzLTM gJCtnK"
-      name="MovieGridItem"
     >
       <img
         alt="Tomb Raider"
@@ -482,7 +478,6 @@ exports[`Main component should select a min rating 1`] = `
   >
     <div
       className="sc-hMqMXs dtFEWJ"
-      name="MovieGridItem"
     >
       <img
         alt="Fifty Shades Freed"
@@ -503,7 +498,6 @@ exports[`Main component should select a min rating 1`] = `
     </div>
     <div
       className="sc-kEYyzF jLQnvE"
-      name="MovieGridItem"
     >
       <img
         alt="Black Panther"
@@ -524,7 +518,6 @@ exports[`Main component should select a min rating 1`] = `
     </div>
     <div
       className="sc-kkGfuU iNJJiR"
-      name="MovieGridItem"
     >
       <img
         alt="Coco"
@@ -545,7 +538,6 @@ exports[`Main component should select a min rating 1`] = `
     </div>
     <div
       className="sc-iAyFgw kYdYEK"
-      name="MovieGridItem"
     >
       <img
         alt="Tomb Raider"
@@ -667,7 +659,6 @@ exports[`Main component should select a min rating 2`] = `
   >
     <div
       className="sc-jAaTju hSMtBi"
-      name="MovieGridItem"
     >
       <img
         alt="Black Panther"
@@ -688,7 +679,6 @@ exports[`Main component should select a min rating 2`] = `
     </div>
     <div
       className="sc-jDwBTQ cGOPtL"
-      name="MovieGridItem"
     >
       <img
         alt="Coco"
