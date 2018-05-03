@@ -93,18 +93,18 @@ exports[`Main component should match empty snapshot 1`] = `
     </select>
   </div>
   <div
-    className="sc-EHOje dgfsxR"
+    className="sc-ifAKCX hjpakO"
   />
   <footer
-    className="sc-bZQynM jTTzqW"
+    className="sc-EHOje kXDFbL"
   >
     <img
       alt="tmdb logo"
-      className="sc-gzVnrw bylXzw"
+      className="sc-bZQynM brufEJ"
       src="tmdb-logo.png"
     />
     <div
-      className="sc-htoDjs hXIZpn"
+      className="sc-gzVnrw jFEtkM"
     >
       This product uses the TMDb API but is not endorsed or certified by TMDb.
     </div>
@@ -115,7 +115,7 @@ exports[`Main component should match empty snapshot 1`] = `
 exports[`Main component should match snapshot with min rating 1`] = `
 <main>
   <div
-    className="sc-jzJRlG gMGYdn"
+    className="sc-kAzzGY gHxlAo"
   >
     Movies now playing
   </div>
@@ -126,7 +126,7 @@ exports[`Main component should match snapshot with min rating 1`] = `
       Choose a minimum rating: 
     </label>
     <select
-      className="sc-cSHVUG jjSnWe"
+      className="sc-chPdSV kDcBlS"
       onChange={[Function]}
       value={8}
     >
@@ -193,18 +193,18 @@ exports[`Main component should match snapshot with min rating 1`] = `
     </select>
   </div>
   <div
-    className="sc-chPdSV ifgDvI"
+    className="sc-kgoBCf gdLqKu"
   />
   <footer
-    className="sc-kgoBCf bYtNgI"
+    className="sc-kGXeez goMMxa"
   >
     <img
       alt="tmdb logo"
-      className="sc-kGXeez bWwPEQ"
+      className="sc-kpOJdX bQiTNm"
       src="tmdb-logo.png"
     />
     <div
-      className="sc-kpOJdX bsNBXO"
+      className="sc-dxgOiQ cbMbPk"
     >
       This product uses the TMDb API but is not endorsed or certified by TMDb.
     </div>
@@ -215,7 +215,7 @@ exports[`Main component should match snapshot with min rating 1`] = `
 exports[`Main component should match snapshot with movie data 1`] = `
 <main>
   <div
-    className="sc-dnqmqq ewDSjv"
+    className="sc-htoDjs jSBmjZ"
   >
     Movies now playing
   </div>
@@ -226,7 +226,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       Choose a minimum rating: 
     </label>
     <select
-      className="sc-iwsKbI gwNExv"
+      className="sc-dnqmqq dVLGNk"
       onChange={[Function]}
       value={0}
     >
@@ -293,7 +293,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
     </select>
   </div>
   <div
-    className="sc-gqjmRU etoXPi"
+    className="sc-iwsKbI iSwkUK"
   >
     <div
       className="sc-gZMcBi imdaMP"
@@ -317,7 +317,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="sc-gqjmRU hjPhi"
       name="MovieGridItem"
     >
       <img
@@ -338,7 +338,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="sc-VigVT gwDSPQ"
       name="MovieGridItem"
     >
       <img
@@ -359,7 +359,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
       </div>
     </div>
     <div
-      className="sc-gZMcBi imdaMP"
+      className="sc-jTzLTM gJCtnK"
       name="MovieGridItem"
     >
       <img
@@ -381,15 +381,15 @@ exports[`Main component should match snapshot with movie data 1`] = `
     </div>
   </div>
   <footer
-    className="sc-VigVT jFONBY"
+    className="sc-fjdhpX gDFkmU"
   >
     <img
       alt="tmdb logo"
-      className="sc-jTzLTM bCMSoG"
+      className="sc-jzJRlG iwPmjt"
       src="tmdb-logo.png"
     />
     <div
-      className="sc-fjdhpX hfzrgR"
+      className="sc-cSHVUG kdwfCy"
     >
       This product uses the TMDb API but is not endorsed or certified by TMDb.
     </div>
@@ -400,7 +400,7 @@ exports[`Main component should match snapshot with movie data 1`] = `
 exports[`Main component should select a min rating 1`] = `
 <main>
   <div
-    className="sc-dxgOiQ pGijw"
+    className="sc-ckVGcZ liuaMw"
   >
     Movies now playing
   </div>
@@ -411,7 +411,7 @@ exports[`Main component should select a min rating 1`] = `
       Choose a minimum rating: 
     </label>
     <select
-      className="sc-ckVGcZ ccYMdj"
+      className="sc-jKJlTe dyrHeg"
       onChange={[Function]}
       value={0}
     >
@@ -481,7 +481,7 @@ exports[`Main component should select a min rating 1`] = `
     className="sc-eNQAEJ fCssbo"
   >
     <div
-      className="sc-jKJlTe lhyryN"
+      className="sc-hMqMXs dtFEWJ"
       name="MovieGridItem"
     >
       <img
@@ -502,7 +502,7 @@ exports[`Main component should select a min rating 1`] = `
       </div>
     </div>
     <div
-      className="sc-jKJlTe lhyryN"
+      className="sc-kEYyzF jLQnvE"
       name="MovieGridItem"
     >
       <img
@@ -523,7 +523,7 @@ exports[`Main component should select a min rating 1`] = `
       </div>
     </div>
     <div
-      className="sc-jKJlTe lhyryN"
+      className="sc-kkGfuU iNJJiR"
       name="MovieGridItem"
     >
       <img
@@ -544,7 +544,7 @@ exports[`Main component should select a min rating 1`] = `
       </div>
     </div>
     <div
-      className="sc-jKJlTe lhyryN"
+      className="sc-iAyFgw kYdYEK"
       name="MovieGridItem"
     >
       <img
@@ -566,15 +566,15 @@ exports[`Main component should select a min rating 1`] = `
     </div>
   </div>
   <footer
-    className="sc-hMqMXs qbXhT"
+    className="sc-hSdWYo iDymVq"
   >
     <img
       alt="tmdb logo"
-      className="sc-kEYyzF iArugn"
+      className="sc-eHgmQL iSkMLG"
       src="tmdb-logo.png"
     />
     <div
-      className="sc-kkGfuU jlULYF"
+      className="sc-cvbbAY fBZXoc"
     >
       This product uses the TMDb API but is not endorsed or certified by TMDb.
     </div>
@@ -585,7 +585,7 @@ exports[`Main component should select a min rating 1`] = `
 exports[`Main component should select a min rating 2`] = `
 <main>
   <div
-    className="sc-iAyFgw kNeyEc"
+    className="sc-jWBwVP hhMTqe"
   >
     Movies now playing
   </div>
@@ -596,7 +596,7 @@ exports[`Main component should select a min rating 2`] = `
       Choose a minimum rating: 
     </label>
     <select
-      className="sc-hSdWYo ifeOWd"
+      className="sc-brqgnP hHZIME"
       onChange={[Function]}
       value={7}
     >
@@ -663,10 +663,10 @@ exports[`Main component should select a min rating 2`] = `
     </select>
   </div>
   <div
-    className="sc-cvbbAY dQHQdj"
+    className="sc-cMljjf jUnOyQ"
   >
     <div
-      className="sc-eHgmQL gROLGe"
+      className="sc-jAaTju hSMtBi"
       name="MovieGridItem"
     >
       <img
@@ -687,7 +687,7 @@ exports[`Main component should select a min rating 2`] = `
       </div>
     </div>
     <div
-      className="sc-eHgmQL gROLGe"
+      className="sc-jDwBTQ cGOPtL"
       name="MovieGridItem"
     >
       <img
@@ -709,15 +709,15 @@ exports[`Main component should select a min rating 2`] = `
     </div>
   </div>
   <footer
-    className="sc-jWBwVP lmeZLl"
+    className="sc-gPEVay imyWEp"
   >
     <img
       alt="tmdb logo"
-      className="sc-brqgnP devwwz"
+      className="sc-iRbamj jALgdM"
       src="tmdb-logo.png"
     />
     <div
-      className="sc-cMljjf bweLaX"
+      className="sc-jlyJG twsVl"
     >
       This product uses the TMDb API but is not endorsed or certified by TMDb.
     </div>
