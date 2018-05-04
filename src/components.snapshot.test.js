@@ -6,14 +6,16 @@ import { changeMinRating } from "./actions";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import { connect } from "react-redux";
+import {shallow} from 'enzyme';
+import toJson from 'enzyme-to-json';
 
 const slicedResults = results.slice(0, 4);
 
 describe("Header", () => {
   it("should match snapshot", () => {
-    const tree = renderer.create(<Header />).toJSON();
+    const wrapper = shallow(<Header />);
 
-    expect(tree).toMatchSnapshot();
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
 

@@ -1,15 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should match snapshot 1`] = `
-<header
-  className="sc-bwzfXH kGqwtf"
->
-  <h1
-    className="sc-bdVaJa bUEgTO"
-  >
+<styled.header>
+  <styled.h1>
     My Movies
-  </h1>
-</header>
+  </styled.h1>
+</styled.header>
 `;
 
 exports[`Main component should match empty snapshot 1`] = `
