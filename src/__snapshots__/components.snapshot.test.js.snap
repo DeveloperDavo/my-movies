@@ -104,7 +104,6 @@ exports[`Main component should match snapshot 1`] = `
 exports[`MovieGrid should match snapshot 1`] = `
 <styled.div>
   <Component
-    imageSrc="http://image.tmdb.org/t/p/w200//uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
     key="284054"
     movie={
       Object {
@@ -131,7 +130,6 @@ exports[`MovieGrid should match snapshot 1`] = `
     }
   />
   <Component
-    imageSrc="http://image.tmdb.org/t/p/w200//eKi8dIrr8voobbaGzDpe8w0PVbC.jpg"
     key="354912"
     movie={
       Object {
@@ -164,7 +162,7 @@ exports[`MovieGridItem should match snapshot 1`] = `
 <styled.div>
   <img
     alt="Black Panther"
-    src="42"
+    src="http://image.tmdb.org/t/p/w200//uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
     width="200"
   />
   <h3>

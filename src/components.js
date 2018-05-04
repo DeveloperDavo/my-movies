@@ -44,7 +44,7 @@ const MinRatingSelect = ({ value, onChange }) => {
   );
 };
 
-export const MovieGridItem = ({ movie, imageSrc }) => {
+export const MovieGridItem = ({ movie }) => {
   const MovieGridItem = styled.div`
     margin: 1rem;
     padding: 1rem;
@@ -55,7 +55,7 @@ export const MovieGridItem = ({ movie, imageSrc }) => {
     <MovieGridItem>
       <img
         width="200"
-        src={imageSrc}
+        src={`http://image.tmdb.org/t/p/w200/${movie.poster_path}`}
         alt={movie.title}
       />
       <h3>{movie.title}</h3>
@@ -80,9 +80,8 @@ export const MovieGrid = ({ movies, minRating }) => {
   const movieGrid = movies
     .filter(movie => movie.vote_average >= minRating)
     .map(movie => {
-      const imageSrc = `http://image.tmdb.org/t/p/w200/${movie.poster_path}`;
       return (
-        <MovieGridItem movie={movie} imageSrc={imageSrc} key={movie.id} />
+        <MovieGridItem movie={movie} key={movie.id} />
       );
     });
   return <MovieGrid>{movieGrid}</MovieGrid>;

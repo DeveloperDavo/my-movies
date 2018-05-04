@@ -27,7 +27,7 @@ describe("Attribution", () => {
 
 describe("MovieGridItem", () => {
   it("should match snapshot", () => {
-    const wrapper = shallow(<MovieGridItem movie={slicedResults[1]} imageSrc='42' />);
+    const wrapper = shallow(<MovieGridItem movie={slicedResults[1]} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
