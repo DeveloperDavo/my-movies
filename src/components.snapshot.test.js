@@ -1,12 +1,8 @@
 import React from "react";
-import { Header, Attribution, MinRatingSelect, MovieGridItem, MovieGrid, MainComponent } from "./components";
 import renderer from "react-test-renderer";
+import { Header, Attribution, MinRatingSelect, MovieGridItem, MovieGrid, MainComponent } from "./components";
 import { results } from "./movies.json";
-import { changeMinRating } from "./actions";
-import { Provider } from "react-redux";
-import { store } from "./store";
-import { connect } from "react-redux";
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 const slicedResults = results.slice(0, 3);
