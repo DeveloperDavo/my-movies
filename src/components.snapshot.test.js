@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Attribution, MovieGrid, MainComponent } from "./components";
+import { Header, Attribution, MovieGridItem, MovieGrid, MainComponent } from "./components";
 import renderer from "react-test-renderer";
 import { results } from "./movies.json";
 import { changeMinRating } from "./actions";
@@ -26,6 +26,12 @@ describe("Attribution", () => {
   });
 });
 
+describe("MovieGridItem", () => {
+  it("should match snapshot", () => {
+    const wrapper = shallow(<MovieGridItem movie={slicedResults[1]} imageSrc='42' />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+});
 describe("MovieGrid", () => {
   it("should match empty snapshot", () => {
     const wrapper = shallow(<MovieGrid minRating={0} movies={[]} />);

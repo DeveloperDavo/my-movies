@@ -178,3 +178,24 @@ exports[`MovieGrid should match snapshot with movies and minRating 1`] = `
   />
 </styled.div>
 `;
+
+exports[`MovieGridItem should match snapshot 1`] = `
+<styled.div>
+  <img
+    alt="Black Panther"
+    src="42"
+    width="200"
+  />
+  <h3>
+    Black Panther
+  </h3>
+  <div>
+    Rating: 
+    7.4
+  </div>
+  <div>
+    Review Count: 
+    3477
+  </div>
+</styled.div>
+`;
