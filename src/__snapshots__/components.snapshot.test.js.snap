@@ -20,24 +20,7 @@ exports[`Header should match snapshot 1`] = `
 </styled.header>
 `;
 
-exports[`Main component should match empty snapshot 1`] = `
-<main>
-  <styled.div>
-    Movies now playing
-  </styled.div>
-  <MinRatingSelect
-    onChange={[Function]}
-    value={0}
-  />
-  <Component
-    minRating={0}
-    movies={Array []}
-  />
-  <Component />
-</main>
-`;
-
-exports[`Main component should match snapshot with minRating and movie data 1`] = `
+exports[`Main component should match snapshot 1`] = `
 <main>
   <styled.div>
     Movies now playing
@@ -118,9 +101,7 @@ exports[`Main component should match snapshot with minRating and movie data 1`] 
 </main>
 `;
 
-exports[`MovieGrid should match empty snapshot 1`] = `<styled.div />`;
-
-exports[`MovieGrid should match snapshot with movies and minRating 1`] = `
+exports[`MovieGrid should match snapshot 1`] = `
 <styled.div>
   <Component
     imageSrc="http://image.tmdb.org/t/p/w200//uxzzxijgPIY7slzFvMotPv8wjKA.jpg"

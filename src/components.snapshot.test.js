@@ -14,7 +14,6 @@ const slicedResults = results.slice(0, 3);
 describe("Header", () => {
   it("should match snapshot", () => {
     const wrapper = shallow(<Header />);
-
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
@@ -32,33 +31,16 @@ describe("MovieGridItem", () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
+
 describe("MovieGrid", () => {
-  it("should match empty snapshot", () => {
-    const wrapper = shallow(<MovieGrid minRating={0} movies={[]} />);
-    expect(toJson(wrapper)).toMatchSnapshot();
-  });
-  it("should match snapshot with movies and minRating", () => {
+  it("should match snapshot", () => {
     const wrapper = shallow(<MovieGrid minRating={7} movies={slicedResults} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
 
 describe("Main component", () => {
-  it("should match empty snapshot", () => {
-    const mainComp = (
-      <MainComponent
-        handleMinRatingChange={() => {}}
-        handleFetchMovies={() => {}}
-        minRating={0}
-        movies={[]}
-      />
-    );
-    const wrapper = shallow(mainComp);
-
-    expect(toJson(wrapper)).toMatchSnapshot();
-  });
-
-  it("should match snapshot with minRating and movie data", () => {
+  it("should match snapshot", () => {
     const mainComp = (
       <MainComponent
         handleMinRatingChange={() => {}}
