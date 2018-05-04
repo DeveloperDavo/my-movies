@@ -88,7 +88,7 @@ export const MovieGrid = ({ movies, minRating }) => {
   return <MovieGrid>{movieGrid}</MovieGrid>;
 };
 
-const Attribution = () => {
+export const Attribution = () => {
   const Footer = styled.footer`
     margin: 1rem;
     display: flex;

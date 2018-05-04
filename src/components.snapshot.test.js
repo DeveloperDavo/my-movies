@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, MainComponent } from "./components";
+import { Header, Attribution, MainComponent } from "./components";
 import renderer from "react-test-renderer";
 import { results } from "./movies.json";
 import { changeMinRating } from "./actions";
@@ -15,6 +15,13 @@ describe("Header", () => {
   it("should match snapshot", () => {
     const wrapper = shallow(<Header />);
 
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+});
+
+describe("Attribution", () => {
+  it("should match snapshot", () => {
+    const wrapper = shallow(<Attribution />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

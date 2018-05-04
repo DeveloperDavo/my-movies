@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Attribution should match snapshot 1`] = `
+<styled.footer>
+  <styled.img
+    alt="tmdb logo"
+    src="tmdb-logo.png"
+  />
+  <styled.div>
+    This product uses the TMDb API but is not endorsed or certified by TMDb.
+  </styled.div>
+</styled.footer>
+`;
+
 exports[`Header should match snapshot 1`] = `
 <styled.header>
   <styled.h1>
@@ -21,7 +33,7 @@ exports[`Main component should match empty snapshot 1`] = `
     minRating={6}
     movies={Array []}
   />
-  <Attribution />
+  <Component />
 </main>
 `;
 
@@ -102,6 +114,6 @@ exports[`Main component should match snapshot with movie data 1`] = `
       ]
     }
   />
-  <Attribution />
+  <Component />
 </main>
 `;
