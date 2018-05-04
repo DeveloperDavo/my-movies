@@ -25,7 +25,7 @@ exports[`Main component should match snapshot 1`] = `
   <styled.div>
     Movies now playing
   </styled.div>
-  <MinRatingSelect
+  <Component
     onChange={[Function]}
     value={8}
   />
@@ -99,6 +99,93 @@ exports[`Main component should match snapshot 1`] = `
   />
   <Component />
 </main>
+`;
+
+exports[`MinRatingSelect should match snapshot 1`] = `
+<div
+  id="MinRatingSelect"
+>
+  <label>
+    Choose a minimum rating: 
+  </label>
+  <styled.select
+    onChange={[Function]}
+    value={5}
+  >
+    <option
+      key="0"
+      value="0"
+    >
+      none
+    </option>
+    <option
+      key="5"
+      value={5}
+    >
+      5
+    </option>
+    <option
+      key="5.5"
+      value={5.5}
+    >
+      5.5
+    </option>
+    <option
+      key="6"
+      value={6}
+    >
+      6
+    </option>
+    <option
+      key="6.5"
+      value={6.5}
+    >
+      6.5
+    </option>
+    <option
+      key="7"
+      value={7}
+    >
+      7
+    </option>
+    <option
+      key="7.5"
+      value={7.5}
+    >
+      7.5
+    </option>
+    <option
+      key="8"
+      value={8}
+    >
+      8
+    </option>
+    <option
+      key="8.5"
+      value={8.5}
+    >
+      8.5
+    </option>
+    <option
+      key="9"
+      value={9}
+    >
+      9
+    </option>
+    <option
+      key="9.5"
+      value={9.5}
+    >
+      9.5
+    </option>
+    <option
+      key="10"
+      value={10}
+    >
+      10
+    </option>
+  </styled.select>
+</div>
 `;
 
 exports[`MovieGrid should match snapshot 1`] = `

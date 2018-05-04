@@ -22,7 +22,7 @@ export const Header = () => {
   );
 };
 
-const MinRatingSelect = ({ value, onChange }) => {
+export const MinRatingSelect = ({ value, onChange }) => {
   const Select = styled.select`
     display: inline-block;
     height: 2rem;

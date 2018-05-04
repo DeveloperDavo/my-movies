@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Attribution, MovieGridItem, MovieGrid, MainComponent } from "./components";
+import { Header, Attribution, MinRatingSelect, MovieGridItem, MovieGrid, MainComponent } from "./components";
 import renderer from "react-test-renderer";
 import { results } from "./movies.json";
 import { changeMinRating } from "./actions";
@@ -21,6 +21,13 @@ describe("Header", () => {
 describe("Attribution", () => {
   it("should match snapshot", () => {
     const wrapper = shallow(<Attribution />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+});
+
+describe("MinRatingSelect", () => {
+  it("should match snapshot", () => {
+    const wrapper = shallow(<MinRatingSelect value={5} onChange={() => {}} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
