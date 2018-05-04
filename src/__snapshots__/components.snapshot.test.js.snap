@@ -10,703 +10,98 @@ exports[`Header should match snapshot 1`] = `
 
 exports[`Main component should match empty snapshot 1`] = `
 <main>
-  <div
-    className="sc-htpNat VPkom"
-  >
+  <styled.div>
     Movies now playing
-  </div>
-  <div
-    id="MinRatingSelect"
-  >
-    <label>
-      Choose a minimum rating: 
-    </label>
-    <select
-      className="sc-bxivhb jUndbY"
-      onChange={[Function]}
-      value={0}
-    >
-      <option
-        value="0"
-      >
-        none
-      </option>
-      <option
-        value={5}
-      >
-        5
-      </option>
-      <option
-        value={5.5}
-      >
-        5.5
-      </option>
-      <option
-        value={6}
-      >
-        6
-      </option>
-      <option
-        value={6.5}
-      >
-        6.5
-      </option>
-      <option
-        value={7}
-      >
-        7
-      </option>
-      <option
-        value={7.5}
-      >
-        7.5
-      </option>
-      <option
-        value={8}
-      >
-        8
-      </option>
-      <option
-        value={8.5}
-      >
-        8.5
-      </option>
-      <option
-        value={9}
-      >
-        9
-      </option>
-      <option
-        value={9.5}
-      >
-        9.5
-      </option>
-      <option
-        value={10}
-      >
-        10
-      </option>
-    </select>
-  </div>
-  <div
-    className="sc-ifAKCX hjpakO"
+  </styled.div>
+  <MinRatingSelect
+    onChange={[Function]}
+    value={6}
   />
-  <footer
-    className="sc-EHOje kXDFbL"
-  >
-    <img
-      alt="tmdb logo"
-      className="sc-bZQynM brufEJ"
-      src="tmdb-logo.png"
-    />
-    <div
-      className="sc-gzVnrw jFEtkM"
-    >
-      This product uses the TMDb API but is not endorsed or certified by TMDb.
-    </div>
-  </footer>
-</main>
-`;
-
-exports[`Main component should match snapshot with min rating 1`] = `
-<main>
-  <div
-    className="sc-kAzzGY gHxlAo"
-  >
-    Movies now playing
-  </div>
-  <div
-    id="MinRatingSelect"
-  >
-    <label>
-      Choose a minimum rating: 
-    </label>
-    <select
-      className="sc-chPdSV kDcBlS"
-      onChange={[Function]}
-      value={8}
-    >
-      <option
-        value="0"
-      >
-        none
-      </option>
-      <option
-        value={5}
-      >
-        5
-      </option>
-      <option
-        value={5.5}
-      >
-        5.5
-      </option>
-      <option
-        value={6}
-      >
-        6
-      </option>
-      <option
-        value={6.5}
-      >
-        6.5
-      </option>
-      <option
-        value={7}
-      >
-        7
-      </option>
-      <option
-        value={7.5}
-      >
-        7.5
-      </option>
-      <option
-        value={8}
-      >
-        8
-      </option>
-      <option
-        value={8.5}
-      >
-        8.5
-      </option>
-      <option
-        value={9}
-      >
-        9
-      </option>
-      <option
-        value={9.5}
-      >
-        9.5
-      </option>
-      <option
-        value={10}
-      >
-        10
-      </option>
-    </select>
-  </div>
-  <div
-    className="sc-kgoBCf gdLqKu"
+  <Component
+    minRating={6}
+    movies={Array []}
   />
-  <footer
-    className="sc-kGXeez goMMxa"
-  >
-    <img
-      alt="tmdb logo"
-      className="sc-kpOJdX bQiTNm"
-      src="tmdb-logo.png"
-    />
-    <div
-      className="sc-dxgOiQ cbMbPk"
-    >
-      This product uses the TMDb API but is not endorsed or certified by TMDb.
-    </div>
-  </footer>
+  <Attribution />
 </main>
 `;
 
 exports[`Main component should match snapshot with movie data 1`] = `
 <main>
-  <div
-    className="sc-htoDjs jSBmjZ"
-  >
+  <styled.div>
     Movies now playing
-  </div>
-  <div
-    id="MinRatingSelect"
-  >
-    <label>
-      Choose a minimum rating: 
-    </label>
-    <select
-      className="sc-dnqmqq dVLGNk"
-      onChange={[Function]}
-      value={0}
-    >
-      <option
-        value="0"
-      >
-        none
-      </option>
-      <option
-        value={5}
-      >
-        5
-      </option>
-      <option
-        value={5.5}
-      >
-        5.5
-      </option>
-      <option
-        value={6}
-      >
-        6
-      </option>
-      <option
-        value={6.5}
-      >
-        6.5
-      </option>
-      <option
-        value={7}
-      >
-        7
-      </option>
-      <option
-        value={7.5}
-      >
-        7.5
-      </option>
-      <option
-        value={8}
-      >
-        8
-      </option>
-      <option
-        value={8.5}
-      >
-        8.5
-      </option>
-      <option
-        value={9}
-      >
-        9
-      </option>
-      <option
-        value={9.5}
-      >
-        9.5
-      </option>
-      <option
-        value={10}
-      >
-        10
-      </option>
-    </select>
-  </div>
-  <div
-    className="sc-iwsKbI iSwkUK"
-  >
-    <div
-      className="sc-gZMcBi imdaMP"
-    >
-      <img
-        alt="Fifty Shades Freed"
-        src="http://image.tmdb.org/t/p/w200//jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg"
-        width="200"
-      />
-      <h3>
-        Fifty Shades Freed
-      </h3>
-      <div>
-        Rating: 
-        6.1
-      </div>
-      <div>
-        Review Count: 
-        1097
-      </div>
-    </div>
-    <div
-      className="sc-gqjmRU hjPhi"
-    >
-      <img
-        alt="Black Panther"
-        src="http://image.tmdb.org/t/p/w200//uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
-        width="200"
-      />
-      <h3>
-        Black Panther
-      </h3>
-      <div>
-        Rating: 
-        7.4
-      </div>
-      <div>
-        Review Count: 
-        3477
-      </div>
-    </div>
-    <div
-      className="sc-VigVT gwDSPQ"
-    >
-      <img
-        alt="Coco"
-        src="http://image.tmdb.org/t/p/w200//eKi8dIrr8voobbaGzDpe8w0PVbC.jpg"
-        width="200"
-      />
-      <h3>
-        Coco
-      </h3>
-      <div>
-        Rating: 
-        7.8
-      </div>
-      <div>
-        Review Count: 
-        3404
-      </div>
-    </div>
-    <div
-      className="sc-jTzLTM gJCtnK"
-    >
-      <img
-        alt="Tomb Raider"
-        src="http://image.tmdb.org/t/p/w200//ePyN2nX9t8SOl70eRW47Q29zUFO.jpg"
-        width="200"
-      />
-      <h3>
-        Tomb Raider
-      </h3>
-      <div>
-        Rating: 
-        6.1
-      </div>
-      <div>
-        Review Count: 
-        588
-      </div>
-    </div>
-  </div>
-  <footer
-    className="sc-fjdhpX gDFkmU"
-  >
-    <img
-      alt="tmdb logo"
-      className="sc-jzJRlG iwPmjt"
-      src="tmdb-logo.png"
-    />
-    <div
-      className="sc-cSHVUG kdwfCy"
-    >
-      This product uses the TMDb API but is not endorsed or certified by TMDb.
-    </div>
-  </footer>
-</main>
-`;
-
-exports[`Main component should select a min rating 1`] = `
-<main>
-  <div
-    className="sc-ckVGcZ liuaMw"
-  >
-    Movies now playing
-  </div>
-  <div
-    id="MinRatingSelect"
-  >
-    <label>
-      Choose a minimum rating: 
-    </label>
-    <select
-      className="sc-jKJlTe dyrHeg"
-      onChange={[Function]}
-      value={0}
-    >
-      <option
-        value="0"
-      >
-        none
-      </option>
-      <option
-        value={5}
-      >
-        5
-      </option>
-      <option
-        value={5.5}
-      >
-        5.5
-      </option>
-      <option
-        value={6}
-      >
-        6
-      </option>
-      <option
-        value={6.5}
-      >
-        6.5
-      </option>
-      <option
-        value={7}
-      >
-        7
-      </option>
-      <option
-        value={7.5}
-      >
-        7.5
-      </option>
-      <option
-        value={8}
-      >
-        8
-      </option>
-      <option
-        value={8.5}
-      >
-        8.5
-      </option>
-      <option
-        value={9}
-      >
-        9
-      </option>
-      <option
-        value={9.5}
-      >
-        9.5
-      </option>
-      <option
-        value={10}
-      >
-        10
-      </option>
-    </select>
-  </div>
-  <div
-    className="sc-eNQAEJ fCssbo"
-  >
-    <div
-      className="sc-hMqMXs dtFEWJ"
-    >
-      <img
-        alt="Fifty Shades Freed"
-        src="http://image.tmdb.org/t/p/w200//jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg"
-        width="200"
-      />
-      <h3>
-        Fifty Shades Freed
-      </h3>
-      <div>
-        Rating: 
-        6.1
-      </div>
-      <div>
-        Review Count: 
-        1097
-      </div>
-    </div>
-    <div
-      className="sc-kEYyzF jLQnvE"
-    >
-      <img
-        alt="Black Panther"
-        src="http://image.tmdb.org/t/p/w200//uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
-        width="200"
-      />
-      <h3>
-        Black Panther
-      </h3>
-      <div>
-        Rating: 
-        7.4
-      </div>
-      <div>
-        Review Count: 
-        3477
-      </div>
-    </div>
-    <div
-      className="sc-kkGfuU iNJJiR"
-    >
-      <img
-        alt="Coco"
-        src="http://image.tmdb.org/t/p/w200//eKi8dIrr8voobbaGzDpe8w0PVbC.jpg"
-        width="200"
-      />
-      <h3>
-        Coco
-      </h3>
-      <div>
-        Rating: 
-        7.8
-      </div>
-      <div>
-        Review Count: 
-        3404
-      </div>
-    </div>
-    <div
-      className="sc-iAyFgw kYdYEK"
-    >
-      <img
-        alt="Tomb Raider"
-        src="http://image.tmdb.org/t/p/w200//ePyN2nX9t8SOl70eRW47Q29zUFO.jpg"
-        width="200"
-      />
-      <h3>
-        Tomb Raider
-      </h3>
-      <div>
-        Rating: 
-        6.1
-      </div>
-      <div>
-        Review Count: 
-        588
-      </div>
-    </div>
-  </div>
-  <footer
-    className="sc-hSdWYo iDymVq"
-  >
-    <img
-      alt="tmdb logo"
-      className="sc-eHgmQL iSkMLG"
-      src="tmdb-logo.png"
-    />
-    <div
-      className="sc-cvbbAY fBZXoc"
-    >
-      This product uses the TMDb API but is not endorsed or certified by TMDb.
-    </div>
-  </footer>
-</main>
-`;
-
-exports[`Main component should select a min rating 2`] = `
-<main>
-  <div
-    className="sc-jWBwVP hhMTqe"
-  >
-    Movies now playing
-  </div>
-  <div
-    id="MinRatingSelect"
-  >
-    <label>
-      Choose a minimum rating: 
-    </label>
-    <select
-      className="sc-brqgnP hHZIME"
-      onChange={[Function]}
-      value={7}
-    >
-      <option
-        value="0"
-      >
-        none
-      </option>
-      <option
-        value={5}
-      >
-        5
-      </option>
-      <option
-        value={5.5}
-      >
-        5.5
-      </option>
-      <option
-        value={6}
-      >
-        6
-      </option>
-      <option
-        value={6.5}
-      >
-        6.5
-      </option>
-      <option
-        value={7}
-      >
-        7
-      </option>
-      <option
-        value={7.5}
-      >
-        7.5
-      </option>
-      <option
-        value={8}
-      >
-        8
-      </option>
-      <option
-        value={8.5}
-      >
-        8.5
-      </option>
-      <option
-        value={9}
-      >
-        9
-      </option>
-      <option
-        value={9.5}
-      >
-        9.5
-      </option>
-      <option
-        value={10}
-      >
-        10
-      </option>
-    </select>
-  </div>
-  <div
-    className="sc-cMljjf jUnOyQ"
-  >
-    <div
-      className="sc-jAaTju hSMtBi"
-    >
-      <img
-        alt="Black Panther"
-        src="http://image.tmdb.org/t/p/w200//uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
-        width="200"
-      />
-      <h3>
-        Black Panther
-      </h3>
-      <div>
-        Rating: 
-        7.4
-      </div>
-      <div>
-        Review Count: 
-        3477
-      </div>
-    </div>
-    <div
-      className="sc-jDwBTQ cGOPtL"
-    >
-      <img
-        alt="Coco"
-        src="http://image.tmdb.org/t/p/w200//eKi8dIrr8voobbaGzDpe8w0PVbC.jpg"
-        width="200"
-      />
-      <h3>
-        Coco
-      </h3>
-      <div>
-        Rating: 
-        7.8
-      </div>
-      <div>
-        Review Count: 
-        3404
-      </div>
-    </div>
-  </div>
-  <footer
-    className="sc-gPEVay imyWEp"
-  >
-    <img
-      alt="tmdb logo"
-      className="sc-iRbamj jALgdM"
-      src="tmdb-logo.png"
-    />
-    <div
-      className="sc-jlyJG twsVl"
-    >
-      This product uses the TMDb API but is not endorsed or certified by TMDb.
-    </div>
-  </footer>
+  </styled.div>
+  <MinRatingSelect
+    onChange={[Function]}
+    value={8}
+  />
+  <Component
+    minRating={8}
+    movies={
+      Array [
+        Object {
+          "adult": false,
+          "backdrop_path": "/9ywA15OAiwjSTvg3cBs9B7kOCBF.jpg",
+          "genre_ids": Array [
+            18,
+            10749,
+          ],
+          "id": 337167,
+          "original_language": "en",
+          "original_title": "Fifty Shades Freed",
+          "overview": "Believing they have left behind shadowy figures from their past, newlyweds Christian and Ana fully embrace an inextricable connection and shared life of luxury. But just as she steps into her role as Mrs. Grey and he relaxes into an unfamiliar stability, new threats could jeopardize their happy ending before it even begins.",
+          "popularity": 572.203541,
+          "poster_path": "/jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg",
+          "release_date": "2018-02-07",
+          "title": "Fifty Shades Freed",
+          "video": false,
+          "vote_average": 6.1,
+          "vote_count": 1097,
+        },
+        Object {
+          "adult": false,
+          "backdrop_path": "/b6ZJZHUdMEFECvGiDpJjlfUWela.jpg",
+          "genre_ids": Array [
+            28,
+            12,
+            14,
+            878,
+          ],
+          "id": 284054,
+          "original_language": "en",
+          "original_title": "Black Panther",
+          "overview": "King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without.  Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister,  members of the Dora Milaje (the Wakandan \\"special forces\\"), and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+          "popularity": 329.754985,
+          "poster_path": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+          "release_date": "2018-02-13",
+          "title": "Black Panther",
+          "video": false,
+          "vote_average": 7.4,
+          "vote_count": 3477,
+        },
+        Object {
+          "adult": false,
+          "backdrop_path": "/askg3SMvhqEl4OL52YuvdtY40Yb.jpg",
+          "genre_ids": Array [
+            12,
+            35,
+            10751,
+            16,
+          ],
+          "id": 354912,
+          "original_language": "en",
+          "original_title": "Coco",
+          "overview": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+          "popularity": 211.906826,
+          "poster_path": "/eKi8dIrr8voobbaGzDpe8w0PVbC.jpg",
+          "release_date": "2017-10-27",
+          "title": "Coco",
+          "video": false,
+          "vote_average": 7.8,
+          "vote_count": 3404,
+        },
+      ]
+    }
+  />
+  <Attribution />
 </main>
 `;

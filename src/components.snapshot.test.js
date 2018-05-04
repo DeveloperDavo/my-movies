@@ -9,7 +9,7 @@ import { connect } from "react-redux";
 import {shallow} from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-const slicedResults = results.slice(0, 4);
+const slicedResults = results.slice(0, 3);
 
 describe("Header", () => {
   it("should match snapshot", () => {
@@ -25,28 +25,16 @@ describe("Main component", () => {
       <MainComponent
         handleMinRatingChange={() => {}}
         handleFetchMovies={() => {}}
-        minRating={0}
+        minRating={6}
         movies={[]}
       />
     );
-    const tree = renderer.create(mainComp).toJSON();
+    const wrapper = shallow(mainComp);
 
-    expect(tree).toMatchSnapshot();
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
+
   it("should match snapshot with movie data", () => {
-    const mainComp = (
-      <MainComponent
-        handleMinRatingChange={() => {}}
-        handleFetchMovies={() => {}}
-        minRating={0}
-        movies={slicedResults}
-      />
-    );
-    const tree = renderer.create(mainComp).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-  it("should match snapshot with min rating", () => {
     const mainComp = (
       <MainComponent
         handleMinRatingChange={() => {}}
@@ -55,46 +43,9 @@ describe("Main component", () => {
         movies={slicedResults}
       />
     );
-    const tree = renderer.create(mainComp).toJSON();
+    const wrapper = shallow(mainComp);
 
-    expect(tree).toMatchSnapshot();
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  const MainFake = () => {
-    const mapStateToProps = state => ({
-      minRating: state.handleUserActions.minRating,
-      movies: slicedResults
-    });
-
-    const mapDispatchToProps = dispatch => ({
-      handleMinRatingChange: minRating => dispatch(changeMinRating(minRating)),
-      handleFetchMovies: () => dispatch(() => {})
-    });
-
-    const MainFake = connect(mapStateToProps, mapDispatchToProps)(
-      MainComponent
-    );
-
-    return <MainFake />;
-  };
-
-  it("should select a min rating", () => {
-    const main = renderer.create(
-      <Provider store={store}>
-        <MainFake />
-      </Provider>
-    );
-
-    let tree = main.toJSON();
-
-    expect(tree).toMatchSnapshot();
-
-    tree.children
-      .find(child => child.props.id === "MinRatingSelect")
-      .children.find(child => child.type === "select")
-      .props.onChange(7);
-
-    tree = main.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 });
