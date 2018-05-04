@@ -27,17 +27,17 @@ exports[`Main component should match empty snapshot 1`] = `
   </styled.div>
   <MinRatingSelect
     onChange={[Function]}
-    value={6}
+    value={0}
   />
   <Component
-    minRating={6}
+    minRating={0}
     movies={Array []}
   />
   <Component />
 </main>
 `;
 
-exports[`Main component should match snapshot with movie data 1`] = `
+exports[`Main component should match snapshot with minRating and movie data 1`] = `
 <main>
   <styled.div>
     Movies now playing

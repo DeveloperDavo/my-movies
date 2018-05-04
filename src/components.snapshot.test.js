@@ -43,7 +43,7 @@ describe("Main component", () => {
       <MainComponent
         handleMinRatingChange={() => {}}
         handleFetchMovies={() => {}}
-        minRating={6}
+        minRating={0}
         movies={[]}
       />
     );
@@ -52,7 +52,7 @@ describe("Main component", () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it("should match snapshot with movie data", () => {
+  it("should match snapshot with minRating and movie data", () => {
     const mainComp = (
       <MainComponent
         handleMinRatingChange={() => {}}
