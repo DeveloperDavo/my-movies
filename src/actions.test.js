@@ -1,6 +1,5 @@
 /* eslint-env jest */
 
-import React from 'react'
 import { changeMinRating, receiveMovies, RECEIVE_MOVIES, fetchMovies } from './actions'
 import { results } from './movies.json'
 import configureMockStore from 'redux-mock-store'
@@ -34,7 +33,7 @@ describe('async actions', () => {
 
   it('creates RECEIVE_MOVIES when fetching movies is complete', () => {
     const matcher = `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&page=1`
-    const response = { body: { results}, headers: { 'content-type': 'application/json' } }
+    const response = { body: { results }, headers: { 'content-type': 'application/json' } }
     fetchMock.getOnce(matcher, response)
 
     const expectedActions = [

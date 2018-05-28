@@ -1,6 +1,5 @@
 /* eslint-env jest */
 
-import React from 'react'
 import { handleUserActions, handleNetworkActions } from './reducers'
 import { changeMinRating, receiveMovies } from './actions'
 import { results } from './movies.json'
@@ -15,7 +14,7 @@ describe('reducers', () => {
 
     it('should handle changing the min rating', () => {
       const minRating = 7
-      expect(handleUserActions({ minRating: '4'}, changeMinRating(minRating))).toEqual({
+      expect(handleUserActions({ minRating: '4' }, changeMinRating(minRating))).toEqual({
         minRating: minRating
       })
     })

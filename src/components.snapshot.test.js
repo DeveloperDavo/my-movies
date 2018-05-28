@@ -1,7 +1,6 @@
 /* eslint-env jest */
 
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { Header, Attribution, MinRatingSelect, MovieGridItem, MovieGrid, MainComponent } from './components'
 import { results } from './movies.json'
 import { shallow } from 'enzyme'
