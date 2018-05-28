@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 import React from 'react'
 import { changeMinRating, receiveMovies, RECEIVE_MOVIES, fetchMovies } from './actions'
 import { results } from './movies.json'

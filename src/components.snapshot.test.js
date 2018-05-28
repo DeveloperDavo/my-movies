@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { Header, Attribution, MinRatingSelect, MovieGridItem, MovieGrid, MainComponent } from './components'

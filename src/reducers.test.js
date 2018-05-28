@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 import React from 'react'
 import { handleUserActions, handleNetworkActions } from './reducers'
 import { changeMinRating, receiveMovies } from './actions'
