@@ -16,5 +16,5 @@ const mapDispatchToProps = dispatch => ({
 
 export const Main = connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(MainComponent)

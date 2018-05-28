@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { 
+import {
   CHANGE_MIN_RATING,
   RECEIVE_MOVIES
 } from './actions'
@@ -14,12 +14,12 @@ export const handleUserActions = (state = { minRating: 0 }, action) => {
 }
 
 export const handleNetworkActions = (state = {movies: []}, action) => {
-  switch (action.type) { 
+  switch (action.type) {
     case RECEIVE_MOVIES:
       return ({
-        movies: action.movies, 
+        movies: action.movies
       })
-    default: 
+    default:
       return state
   }
 }
