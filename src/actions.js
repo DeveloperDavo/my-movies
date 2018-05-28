@@ -8,12 +8,10 @@ export const changeMinRating = minRating => ({
   minRating
 })
 
-export const receiveMovies = results => {
-  return {
-    type: RECEIVE_MOVIES,
-    movies: results
-  }
-}
+export const receiveMovies = results => ({
+  type: RECEIVE_MOVIES,
+  movies: results
+})
 
 export const fetchMovies = () => {
   return dispatch => {
