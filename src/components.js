@@ -112,13 +112,6 @@ export const Attribution = () => {
 }
 
 export class MainComponent extends Component {
-  constructor(props) {
-    super(props)
-
-    const { handleMinRatingChange, handleFetchMovies } = this.props;
-  }
-
-
   componentDidMount() {
     this.props.handleFetchMovies()
   }
