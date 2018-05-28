@@ -116,8 +116,6 @@ export class MainComponent extends Component {
     super(props)
 
     const { handleMinRatingChange, handleFetchMovies } = this.props;
-    handleMinRatingChange.bind(this);
-    handleFetchMovies.bind(this);
   }
 
 
