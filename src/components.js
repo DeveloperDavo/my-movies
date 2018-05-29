@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const smallScreen = '(min-width: 576px)'
 const largeScreen = '(min-width: 992px)'
@@ -44,6 +45,11 @@ export const MinRatingSelect = ({ value, onChange }) => {
   )
 }
 
+MinRatingSelect.propTypes = {
+  value: PropTypes.number,
+  onChange: PropTypes.func
+}
+
 export const MovieGridItem = ({ movie }) => {
   const MovieGridItem = styled.div`
     margin: 1rem;
@@ -65,6 +71,10 @@ export const MovieGridItem = ({ movie }) => {
   )
 }
 
+MovieGridItem.propTypes = {
+  movie: PropTypes.object
+}
+
 export const MovieGrid = ({ movies, minRating }) => {
   const MovieGrid = styled.div`
     display: grid;
@@ -84,6 +94,11 @@ export const MovieGrid = ({ movies, minRating }) => {
       )
     })
   return <MovieGrid>{movieGrid}</MovieGrid>
+}
+
+MovieGrid.propTypes = {
+  movies: PropTypes.array,
+  minRating: PropTypes.number
 }
 
 export const Attribution = () => {
@@ -134,4 +149,10 @@ export class MainComponent extends Component {
       </main>
     )
   }
+}
+
+MainComponent.propTypes = {
+  minRating: PropTypes.number,
+  handleMinRatingChange: PropTypes.func,
+  movies: PropTypes.array
 }
