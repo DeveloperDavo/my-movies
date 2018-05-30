@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
 import React from 'react'
-import { Header, Attribution, MinRatingSelect, MovieGridItem, MovieGrid, MainComponent } from './components'
+import { Header, Attribution, MinRatingSelect, MovieGridItem, MovieGrid, MainComponent } from '../components'
 import { results } from './movies.json'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'

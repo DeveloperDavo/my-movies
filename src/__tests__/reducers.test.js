@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
-import { handleUserActions, handleNetworkActions } from './reducers'
-import { changeMinRating, receiveMovies } from './actions'
+import { handleUserActions, handleNetworkActions } from '../reducers'
+import { changeMinRating, receiveMovies } from '../actions'
 import { results } from './movies.json'
 
 describe('reducers', () => {

@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-import { changeMinRating, receiveMovies, RECEIVE_MOVIES, fetchMovies } from './actions'
+import { changeMinRating, receiveMovies, RECEIVE_MOVIES, fetchMovies } from '../actions'
 import { results } from './movies.json'
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
