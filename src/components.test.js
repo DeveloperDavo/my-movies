@@ -3,7 +3,7 @@
 import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { MovieGrid, MovieGridItem } from './components'
+import { MainComponent, MovieGrid, MovieGridItem } from './components'
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -35,6 +35,15 @@ describe('components', () => {
       const wrapper = shallow(movieGridComp)
 
       expect(wrapper.find(MovieGridItem).length).toEqual(2)
+    })
+  })
+
+  describe('Main Component', () => {
+    it('should fetch movies on mount', () => {
+      const handleFetchMoviesMock = jest.fn()
+      const mainComp = <MainComponent handleFetchMovies={handleFetchMoviesMock} />
+      shallow(mainComp)
+      expect(handleFetchMoviesMock.mock.calls.length).toBe(1)
     })
   })
 })
