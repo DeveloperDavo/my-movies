@@ -2,12 +2,12 @@ import { connect } from 'react-redux'
 import { changeMinRating, fetchMovies } from './actions'
 import { MainComponent } from './components'
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   minRating: state.handleUserActions.minRating,
   movies: state.handleNetworkActions.movies
 })
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   handleMinRatingChange: e => dispatch(changeMinRating(e.target.value)),
   handleFetchMovies: () => dispatch(fetchMovies())
 })
