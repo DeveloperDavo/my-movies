@@ -14,3 +14,6 @@ Run the app in development mode `yarn start`
 ## Test
 * Run the tests with `yarn test`
 * Run the tests with coverage with `yarn test --coverage`
+
+## Mentioned in
+* [Learn React with these resources](https://learnitmyway.com/learn-react-with-these-resources/)
